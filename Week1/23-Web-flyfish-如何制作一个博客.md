@@ -1,6 +1,4 @@
----
-title: 如何制作一个博客
----
+# 如何制作一个博客
 
 <h2 id="lc4ZI">工具准备</h2>
 
@@ -113,8 +111,9 @@ deploy:
 
 3.<font style="color:rgb(31, 31, 31);">修改好配置后，运行如下命令，将代码部署到 GitHub。</font>
 
-<font style="color:rgb(31, 31, 31);">如果出现</font>`<font style="color:rgb(244, 116, 102);">Deploy done</font>`<font style="color:rgb(31, 31, 31);">，则说明部署成功了。</font>
+<font style="color:rgb(31, 31, 31);">如果出现Deploy done，则说明部署成功了。</font>
 
 <font style="color:rgb(31, 31, 31);">稍等两分钟，打开浏览器访问：</font>[https://](https://fomalhaut-blog.github.io/)仓库名<font style="color:rgb(31, 31, 31);"> ，这时候我们就可以看到博客内容了。</font>
 
-我的网址:https://flyfish567.github.io/
+
+**我的网址:https://flyfish567.github.io/**
