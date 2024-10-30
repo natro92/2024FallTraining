@@ -3,12 +3,12 @@ title: 如何制作一个博客
 ---
 
 <h2 id="lc4ZI">环境与工具准备</h2>
-+ <font style="color:rgb(31, 31, 31);">操作系统：Windows11</font>
-+ [Node.js — 在任何地方运行 JavaScript (nodejs.org)](https://nodejs.org/zh-cn)  
-+ [Git - 安装 Git (git-scm.com)](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git)
-+ <font style="color:rgb(31, 31, 31);">Hexo</font>
-+ <font style="color:rgb(31, 31, 31);">文本编辑器(推荐VSCODE)</font>
-+ <font style="color:rgb(31, 31, 31);">GitHub 帐号</font>
+
+ [Node.js — 在任何地方运行 JavaScript (nodejs.org)](https://nodejs.org/zh-cn)  
+ [Git - 安装 Git (git-scm.com)](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git)
+ <font style="color:rgb(31, 31, 31);">Hexo</font>
+ <font style="color:rgb(31, 31, 31);">文本编辑器(推荐VSCODE)</font>
+ <font style="color:rgb(31, 31, 31);">GitHub 帐号</font>
 
 <h3 id="IxcZA"><font style="color:rgb(31, 31, 31);">安装hexo</font></h3>
 在桌面右键选择git bash，输入npm install -g hexo-cli
