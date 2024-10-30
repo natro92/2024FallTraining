@@ -45,8 +45,8 @@ title: 如何制作一个博客
 打开git bash
 
 ```shell
-git config --global user.name "你的用户名"
-git config --global user.email "你的邮箱"
+git config --global user.name "你的用户名 "
+git config --global user.email "你的邮箱 "
 ```
 
 <font style="color:rgb(31, 31, 31);">通过</font>`<font style="color:rgb(244, 116, 102);">git config -l</font>`<font style="color:rgb(31, 31, 31);"> 检查是否配置成功。</font>
@@ -117,3 +117,4 @@ deploy:
 
 <font style="color:rgb(31, 31, 31);">稍等两分钟，打开浏览器访问：</font>[https://](https://fomalhaut-blog.github.io/)仓库名<font style="color:rgb(31, 31, 31);"> ，这时候我们就可以看到博客内容了。</font>
 
+我的网址:https://flyfish567.github.io/
