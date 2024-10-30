@@ -47,7 +47,7 @@ git config --global user.name "你的用户名 "
 git config --global user.email "你的邮箱 "
 ```
 
-<font style="color:rgb(31, 31, 31);">通过</font>`<font style="color:rgb(244, 116, 102);">git config -l</font>`<font style="color:rgb(31, 31, 31);"> 检查是否配置成功。</font>
+<font style="color:rgb(31, 31, 31);">通过</font>git config -l检查是否配置成功。
 
 <h2 id="zMo6F"><font style="color:rgb(31, 31, 31);">连接github</font></h2>
 
@@ -62,7 +62,7 @@ git config --global user.email "你的邮箱 "
 2. 打开<font style="color:rgb(31, 31, 31);"> id_rsa.pub，复制其中的内容</font>
 3. <font style="color:rgb(31, 31, 31);">将 SSH KEY 配置到 GitHub</font>
 
-<font style="color:rgb(31, 31, 31);">  进入github，点击右上角头像 选择</font>`<font style="color:rgb(244, 116, 102);">settings</font>`<font style="color:rgb(31, 31, 31);">，进入设置页后选择 </font>`<font style="color:rgb(244, 116, 102);">SSH and GPG keys</font>`
+<font style="color:rgb(31, 31, 31);">  进入github，点击右上角头像 选择</font>settings，进入设置页后选择 SSH and GPG keys
 
 ![image-20241029210556718](https://s2.loli.net/2024/10/29/4YKDhJboGNWptRU.png)
 
@@ -92,7 +92,7 @@ title可以随便填，将密钥填入<font style="color:#df2a3f;">key</font>中
 
 1. 安装<font style="color:rgb(31, 31, 31);">hexo-deployer-git</font>
 
-`<font style="color:rgb(31, 31, 31);">npm install hexo-deployer-git --save</font>`
+npm install hexo-deployer-git --save
 
 2. <font style="color:rgb(31, 31, 31);">修改 _config.yml 文件，将deploy后的内容修改为如下图所示（注意缩进）</font>
 
