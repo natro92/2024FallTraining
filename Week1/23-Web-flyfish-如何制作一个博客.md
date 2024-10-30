@@ -1,8 +1,8 @@
 ---
-title: ÈçºÎÖÆ×÷Ò»¸ö²©¿Í
+title: å¦‚ä½•åˆ¶ä½œä¸€ä¸ªåšå®¢
 ---
 
-<h2 id="lc4ZI">¹¤¾ß×¼±¸</h2>
+<h2 id="lc4ZI">å·¥å…·å‡†å¤‡</h2>
 
 <font style="color:rgb(31, 31, 31);">1.Node.js</font>
 
@@ -10,13 +10,13 @@ title: ÈçºÎÖÆ×÷Ò»¸ö²©¿Í
 
 <font style="color:rgb(31, 31, 31);">3.Hexo</font>
 
-<font style="color:rgb(31, 31, 31);">4.ÎÄ±¾±à¼­Æ÷(ÍÆ¼öVSCODE)</font>
+<font style="color:rgb(31, 31, 31);">4.æ–‡æœ¬ç¼–è¾‘å™¨(æ¨èVSCODE)</font>
 
-<font style="color:rgb(31, 31, 31);">5.GitHub ÕÊºÅ</font>
+<font style="color:rgb(31, 31, 31);">5.GitHub å¸å·</font>
 
-°²×°hexo
+å®‰è£…hexo
 
-ÔÚ×ÀÃæÓÒ¼üÑ¡Ôñgit bash£¬ÊäÈënpm install -g hexo-cli
+åœ¨æ¡Œé¢å³é”®é€‰æ‹©git bashï¼Œè¾“å…¥npm install -g hexo-cli
 
 ![image-20241029210320268](https://s2.loli.net/2024/10/29/gJk2KxV8jelCowv.png)
 
@@ -24,15 +24,15 @@ title: ÈçºÎÖÆ×÷Ò»¸ö²©¿Í
 
 
 
-<h2 id="KWvKs">×¢²á²Ö¿â</h2>
+<h2 id="KWvKs">æ³¨å†Œä»“åº“</h2>
 
-1. µã»÷newÖ±½Ó´´½¨²Ö¿â
+1. ç‚¹å‡»newç›´æ¥åˆ›å»ºä»“åº“
 
 ![image-20241029210459592](https://s2.loli.net/2024/10/29/o2q7CSk5MgFdVI6.png)
 
-2. ÃüÃû²Ö¿â£ºÓÃ»§Ãû+.github.io
-3. <font style="color:rgb(31, 31, 31);">¹´Ñ¡ Initialize this repository with a README ³õÊ¼»¯Ò»¸ö</font><font style="color:rgb(31, 31, 31);"> </font>[<font style="color:rgb(31, 31, 31);">README.md</font>](http://readme.md/)<font style="color:rgb(31, 31, 31);"> </font><font style="color:rgb(31, 31, 31);">ÎÄ¼ş</font>
-4. <font style="color:rgb(31, 31, 31);">µã»÷ Creat repository ½øĞĞ´´½¨</font>
+2. å‘½åä»“åº“ï¼šç”¨æˆ·å+.github.io
+3. <font style="color:rgb(31, 31, 31);">å‹¾é€‰ Initialize this repository with a README åˆå§‹åŒ–ä¸€ä¸ª</font><font style="color:rgb(31, 31, 31);"> </font>[<font style="color:rgb(31, 31, 31);">README.md</font>](http://readme.md/)<font style="color:rgb(31, 31, 31);"> </font><font style="color:rgb(31, 31, 31);">æ–‡ä»¶</font>
+4. <font style="color:rgb(31, 31, 31);">ç‚¹å‡» Creat repository è¿›è¡Œåˆ›å»º</font>
 
 ![image-20241029210518364](https://s2.loli.net/2024/10/29/ivZneDKt28VOSEH.png)
 
@@ -40,68 +40,68 @@ title: ÈçºÎÖÆ×÷Ò»¸ö²©¿Í
 
 
 
-<h2 id="WNBEJ">git³õÊ¼»¯</h2>
+<h2 id="WNBEJ">gitåˆå§‹åŒ–</h2>
 
-´ò¿ªgit bash
+æ‰“å¼€git bash
 
 ```shell
-git config --global user.name "ÄãµÄÓÃ»§Ãû"
-git config --global user.email "ÄãµÄÓÊÏä"
+git config --global user.name "ä½ çš„ç”¨æˆ·å"
+git config --global user.email "ä½ çš„é‚®ç®±"
 ```
 
-<font style="color:rgb(31, 31, 31);">Í¨¹ı</font>`<font style="color:rgb(244, 116, 102);">git config -l</font>`<font style="color:rgb(31, 31, 31);"> ¼ì²éÊÇ·ñÅäÖÃ³É¹¦¡£</font>
+<font style="color:rgb(31, 31, 31);">é€šè¿‡</font>`<font style="color:rgb(244, 116, 102);">git config -l</font>`<font style="color:rgb(31, 31, 31);"> æ£€æŸ¥æ˜¯å¦é…ç½®æˆåŠŸã€‚</font>
 
-<h2 id="zMo6F"><font style="color:rgb(31, 31, 31);">Á¬½Ógithub</font></h2>
+<h2 id="zMo6F"><font style="color:rgb(31, 31, 31);">è¿æ¥github</font></h2>
 
-1. Éú³Éssh¹«Ô¿
+1. ç”Ÿæˆsshå…¬é’¥
 
-ÔÚgitÖĞÖ´ĞĞ`ssh-keygen -t rsa -C "ÄãµÄÓÊÏä"`
+åœ¨gitä¸­æ‰§è¡Œ`ssh-keygen -t rsa -C "ä½ çš„é‚®ç®±"`
 
-<font style="color:rgb(31, 31, 31);">Ö®ºó´ò¿ªCÅÌÏÂÓÃ»§ÎÄ¼ş¼ĞÏÂµÄ.sshµÄÎÄ¼ş¼Ğ£¬»á¿´µ½ id_rsa.pub</font>
+<font style="color:rgb(31, 31, 31);">ä¹‹åæ‰“å¼€Cç›˜ä¸‹ç”¨æˆ·æ–‡ä»¶å¤¹ä¸‹çš„.sshçš„æ–‡ä»¶å¤¹ï¼Œä¼šçœ‹åˆ° id_rsa.pub</font>
 
 ![](https://s2.loli.net/2024/10/29/6C1uxO4HfUVZsaE.png)
 
-2. ´ò¿ª<font style="color:rgb(31, 31, 31);"> id_rsa.pub£¬¸´ÖÆÆäÖĞµÄÄÚÈİ</font>
-3. <font style="color:rgb(31, 31, 31);">½« SSH KEY ÅäÖÃµ½ GitHub</font>
+2. æ‰“å¼€<font style="color:rgb(31, 31, 31);"> id_rsa.pubï¼Œå¤åˆ¶å…¶ä¸­çš„å†…å®¹</font>
+3. <font style="color:rgb(31, 31, 31);">å°† SSH KEY é…ç½®åˆ° GitHub</font>
 
-<font style="color:rgb(31, 31, 31);">  ½øÈëgithub£¬µã»÷ÓÒÉÏ½ÇÍ·Ïñ Ñ¡Ôñ</font>`<font style="color:rgb(244, 116, 102);">settings</font>`<font style="color:rgb(31, 31, 31);">£¬½øÈëÉèÖÃÒ³ºóÑ¡Ôñ </font>`<font style="color:rgb(244, 116, 102);">SSH and GPG keys</font>`
+<font style="color:rgb(31, 31, 31);">  è¿›å…¥githubï¼Œç‚¹å‡»å³ä¸Šè§’å¤´åƒ é€‰æ‹©</font>`<font style="color:rgb(244, 116, 102);">settings</font>`<font style="color:rgb(31, 31, 31);">ï¼Œè¿›å…¥è®¾ç½®é¡µåé€‰æ‹© </font>`<font style="color:rgb(244, 116, 102);">SSH and GPG keys</font>`
 
 ![image-20241029210556718](https://s2.loli.net/2024/10/29/4YKDhJboGNWptRU.png)
 
 ![](https://s2.loli.net/2024/10/29/CIzHXWBY7upDsjS.png)
 
-title¿ÉÒÔËæ±ãÌî£¬½«ÃÜÔ¿ÌîÈë<font style="color:#df2a3f;">key</font>ÖĞ£¬µã»÷add ssh key¼´¿É
+titleå¯ä»¥éšä¾¿å¡«ï¼Œå°†å¯†é’¥å¡«å…¥<font style="color:#df2a3f;">key</font>ä¸­ï¼Œç‚¹å‡»add ssh keyå³å¯
 
 ![image-20241029210637377](https://s2.loli.net/2024/10/29/1NynTP4JIs3gX8V.png)
 
-4.²âÊÔ
+4.æµ‹è¯•
 
-ÔÚgitÖĞÊäÈë`ssh -T git@github.com`£¬ÈôÓĞÕË»§ĞÅÏ¢·µ»ØÔòÁ¬½ÓÍê³É
+åœ¨gitä¸­è¾“å…¥`ssh -T git@github.com`ï¼Œè‹¥æœ‰è´¦æˆ·ä¿¡æ¯è¿”å›åˆ™è¿æ¥å®Œæˆ
 
-<h2 id="xIcfi">³õÊ¼»¯HexoÏîÄ¿</h2>
+<h2 id="xIcfi">åˆå§‹åŒ–Hexoé¡¹ç›®</h2>
 
-1. Ñ¡ÔñÒ»¸öÎÄ¼ş¼Ğ£¬ÓÒ¼ü´ò¿ªgit bash ÊäÈëhexo init
+1. é€‰æ‹©ä¸€ä¸ªæ–‡ä»¶å¤¹ï¼Œå³é”®æ‰“å¼€git bash è¾“å…¥hexo init
 
 ![image-20241029210647230](https://s2.loli.net/2024/10/29/PT6ivwytUDLNpal.png)
 
-2. ÔÙÊäÈëhexo s ÔòÔËĞĞ¿ÉÒÔÔÚ±¾µØä¯ÀÀÆ÷ÊäÈëlocalhost:4000´ò¿ª
+2. å†è¾“å…¥hexo s åˆ™è¿è¡Œå¯ä»¥åœ¨æœ¬åœ°æµè§ˆå™¨è¾“å…¥localhost:4000æ‰“å¼€
 
 ![image-20241029210656410](https://s2.loli.net/2024/10/29/czUji1GedVhZYQo.png)
 
 
 
-<h2 id="HPalj">½«¾²Ì¬²©¿Í¹ÒÔØµ½ GitHub Pages</h2>
+<h2 id="HPalj">å°†é™æ€åšå®¢æŒ‚è½½åˆ° GitHub Pages</h2>
 
-1. °²×°<font style="color:rgb(31, 31, 31);">hexo-deployer-git</font>
+1. å®‰è£…<font style="color:rgb(31, 31, 31);">hexo-deployer-git</font>
 
 `<font style="color:rgb(31, 31, 31);">npm install hexo-deployer-git --save</font>`
 
-2. <font style="color:rgb(31, 31, 31);">ĞŞ¸Ä _config.yml ÎÄ¼ş£¬½«deployºóµÄÄÚÈİĞŞ¸ÄÎªÈçÏÂÍ¼ËùÊ¾£¨×¢ÒâËõ½ø£©</font>
+2. <font style="color:rgb(31, 31, 31);">ä¿®æ”¹ _config.yml æ–‡ä»¶ï¼Œå°†deployåçš„å†…å®¹ä¿®æ”¹ä¸ºå¦‚ä¸‹å›¾æ‰€ç¤ºï¼ˆæ³¨æ„ç¼©è¿›ï¼‰</font>
 
 ```shell
 deploy:
  type: git
- repository: #githubÏîÄ¿µØÖ·
+ repository: #githubé¡¹ç›®åœ°å€
  branch: main
 ```
 
@@ -111,9 +111,9 @@ deploy:
 
 
 
-3.<font style="color:rgb(31, 31, 31);">ĞŞ¸ÄºÃÅäÖÃºó£¬ÔËĞĞÈçÏÂÃüÁî£¬½«´úÂë²¿Êğµ½ GitHub¡£</font>
+3.<font style="color:rgb(31, 31, 31);">ä¿®æ”¹å¥½é…ç½®åï¼Œè¿è¡Œå¦‚ä¸‹å‘½ä»¤ï¼Œå°†ä»£ç éƒ¨ç½²åˆ° GitHubã€‚</font>
 
-<font style="color:rgb(31, 31, 31);">Èç¹û³öÏÖ</font>`<font style="color:rgb(244, 116, 102);">Deploy done</font>`<font style="color:rgb(31, 31, 31);">£¬ÔòËµÃ÷²¿Êğ³É¹¦ÁË¡£</font>
+<font style="color:rgb(31, 31, 31);">å¦‚æœå‡ºç°</font>`<font style="color:rgb(244, 116, 102);">Deploy done</font>`<font style="color:rgb(31, 31, 31);">ï¼Œåˆ™è¯´æ˜éƒ¨ç½²æˆåŠŸäº†ã€‚</font>
 
-<font style="color:rgb(31, 31, 31);">ÉÔµÈÁ½·ÖÖÓ£¬´ò¿ªä¯ÀÀÆ÷·ÃÎÊ£º</font>[https://](https://fomalhaut-blog.github.io/)²Ö¿âÃû<font style="color:rgb(31, 31, 31);"> £¬ÕâÊ±ºòÎÒÃÇ¾Í¿ÉÒÔ¿´µ½²©¿ÍÄÚÈİÁË¡£</font>
+<font style="color:rgb(31, 31, 31);">ç¨ç­‰ä¸¤åˆ†é’Ÿï¼Œæ‰“å¼€æµè§ˆå™¨è®¿é—®ï¼š</font>[https://](https://fomalhaut-blog.github.io/)ä»“åº“å<font style="color:rgb(31, 31, 31);"> ï¼Œè¿™æ—¶å€™æˆ‘ä»¬å°±å¯ä»¥çœ‹åˆ°åšå®¢å†…å®¹äº†ã€‚</font>
 
