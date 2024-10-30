@@ -2,15 +2,20 @@
 title: 如何制作一个博客
 ---
 
-<h2 id="lc4ZI">环境与工具准备</h2>
+<h2 id="lc4ZI">工具准备</h2>
 
- [Node.js — 在任何地方运行 JavaScript (nodejs.org)](https://nodejs.org/zh-cn)  
- [Git - 安装 Git (git-scm.com)](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git)
- <font style="color:rgb(31, 31, 31);">Hexo</font>
- <font style="color:rgb(31, 31, 31);">文本编辑器(推荐VSCODE)</font>
- <font style="color:rgb(31, 31, 31);">GitHub 帐号</font>
+<font style="color:rgb(31, 31, 31);">1.Node.js</font>
 
-<h3 id="IxcZA"><font style="color:rgb(31, 31, 31);">安装hexo</font></h3>
+<font style="color:rgb(31, 31, 31);">2.git</font>
+
+<font style="color:rgb(31, 31, 31);">3.Hexo</font>
+
+<font style="color:rgb(31, 31, 31);">4.文本编辑器(推荐VSCODE)</font>
+
+<font style="color:rgb(31, 31, 31);">5.GitHub 帐号</font>
+
+安装hexo
+
 在桌面右键选择git bash，输入npm install -g hexo-cli
 
 ![image-20241029210320268](https://s2.loli.net/2024/10/29/gJk2KxV8jelCowv.png)
@@ -19,7 +24,8 @@ title: 如何制作一个博客
 
 
 
-<h2 id="KWvKs">2.注册仓库</h2>
+<h2 id="KWvKs">注册仓库</h2>
+
 1. 点击new直接创建仓库
 
 ![image-20241029210459592](https://s2.loli.net/2024/10/29/o2q7CSk5MgFdVI6.png)
@@ -34,7 +40,8 @@ title: 如何制作一个博客
 
 
 
-<h2 id="WNBEJ">3.git初始化</h2>
+<h2 id="WNBEJ">git初始化</h2>
+
 打开git bash
 
 ```shell
@@ -44,7 +51,8 @@ git config --global user.email "你的邮箱"
 
 <font style="color:rgb(31, 31, 31);">通过</font>`<font style="color:rgb(244, 116, 102);">git config -l</font>`<font style="color:rgb(31, 31, 31);"> 检查是否配置成功。</font>
 
-<h2 id="zMo6F"><font style="color:rgb(31, 31, 31);">4.连接github</font></h2>
+<h2 id="zMo6F"><font style="color:rgb(31, 31, 31);">连接github</font></h2>
+
 1. 生成ssh公钥
 
 在git中执行`ssh-keygen -t rsa -C "你的邮箱"`
@@ -70,7 +78,8 @@ title可以随便填，将密钥填入<font style="color:#df2a3f;">key</font>中，点击add ss
 
 在git中输入`ssh -T git@github.com`，若有账户信息返回则连接完成
 
-<h2 id="xIcfi">5.初始化Hexo项目</h2>
+<h2 id="xIcfi">初始化Hexo项目</h2>
+
 1. 选择一个文件夹，右键打开git bash 输入hexo init
 
 ![image-20241029210647230](https://s2.loli.net/2024/10/29/PT6ivwytUDLNpal.png)
@@ -81,7 +90,8 @@ title可以随便填，将密钥填入<font style="color:#df2a3f;">key</font>中，点击add ss
 
 
 
-<h2 id="HPalj">6.将静态博客挂载到 GitHub Pages</h2>
+<h2 id="HPalj">将静态博客挂载到 GitHub Pages</h2>
+
 1. 安装<font style="color:rgb(31, 31, 31);">hexo-deployer-git</font>
 
 `<font style="color:rgb(31, 31, 31);">npm install hexo-deployer-git --save</font>`
