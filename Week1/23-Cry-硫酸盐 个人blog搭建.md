@@ -11,7 +11,7 @@
 # 一、搭建hexo
 
 
-**1、下载好 ****<font style="color:rgb(0, 0, 0);">nodejs、</font>****git**
+1、下载好 <font style="color:rgb(0, 0, 0);">nodejs、</font> git
 
 
 
