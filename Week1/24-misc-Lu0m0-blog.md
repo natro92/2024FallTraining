@@ -1,3 +1,5 @@
+# Blog网站搭建流程
+
 1.上彩虹云网站购买服务器/虚拟主机（网站：[https://www.cccyun.net/](https://www.cccyun.net/)） ，然后选择香港的套餐购买，然后查看会员中心，看见自己购买的服务器。
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/49967934/1730282636756-1072d2ea-4b76-4d04-9c8e-ba91b9ddb5ab.png)
