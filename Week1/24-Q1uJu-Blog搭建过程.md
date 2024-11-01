@@ -1,8 +1,3 @@
----
-title: Blog搭建记录
-date: 2024-10-31 15:46:00
----
-
 <meta name="referrer" content="no-referrer" />
 
 # Q1uJu-Blog搭建过程
