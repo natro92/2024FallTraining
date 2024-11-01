@@ -12,7 +12,7 @@ q1uju.cc或www.q1uju.cc
 
 链接：https://space.bilibili.com/220757832/channel/collectiondetail?sid=886469&spm_id_from=333.788.0.0
 
-**ps：**搭建过程中忘记截图记录了，有些过程可能没有图片。
+ps：搭建过程中忘记截图记录了，有些过程可能没有图片。
 
 ### 前置工作
 
