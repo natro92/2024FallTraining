@@ -6,8 +6,6 @@
 
 q1uju.cc或www.q1uju.cc
 
-<放个界面展示截图>
-
 ## 博客搭建流程
 
 搭建过程参照Fomalhaut大佬的b站搭建教程，使用Hexo作为博客框架。
@@ -88,7 +86,7 @@ hexo clean; hexo generate; hexo deploy  // VSCODE终端
 
 按流程使用Vercel部署完Hexo项目，在西部数码购买域名q1uju.cc，并绑定Vercel自定义域名。
 
-![image-20241031153415275](https://gitee.com/Q1uJu/picture_bed/raw/master/image-20241031153415275.png)
+![image-20241101192710963](https://gitee.com/Q1uJu/picture_bed/raw/master/image-20241101192710963.png)
 
 ### 博客界面主题及美化
 
@@ -141,7 +139,7 @@ PicGo链接：https://github.com/Molunerfinn/PicGo/releases
 - repo：用户名/项目（不用带http协议及.git）
 - token：新建私人令牌中复制的token
 
-![image-20241030202511578](https://gitee.com/Q1uJu/picture_bed/raw/master/image-20241030202511578.png)
+![image-20241101192747232](https://gitee.com/Q1uJu/picture_bed/raw/master/image-20241101192747232.png)
 
 点击[**设置默认图床**]
 
