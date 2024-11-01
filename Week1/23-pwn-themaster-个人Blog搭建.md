@@ -176,7 +176,7 @@ timezone: 时区（可以填写Asia/Shanghai）
 然后保存，打开git bash 生成、上传。
 
 
-我搭建的网站：www.themaster.com
+我搭建的网站：www.themaster.fun
 
 ### <font style="color:#ED740C;">Congratulations！！!</font>
 ### <font style="color:#ED740C;">至此，我们已经成功搭建好基本的博客了，剩下的就是对博客的优化和个性化了:)</font>
