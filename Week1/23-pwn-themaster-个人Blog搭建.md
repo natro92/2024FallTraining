@@ -99,10 +99,9 @@ hexo g
 hexo s
 ```
 
-:::info
+
 **第一步如果出现：command not find，试着输入npx hexo init**
 
-:::
 
 一切没问题的话，就可以复制生成的链接进入浏览器看到我们生成的本地服务器了。
 
@@ -118,11 +117,9 @@ hexo s
   repository: 
   branch: main
 ```
-
-:::color4
 一定要注意缩进格式，每一行前都有两个空格，每个冒号后也都有一个空格！！！
 
-:::
+
 
 	2.前往github之前生成的仓库页面，点code，复制https链接，将其复制到`repository: `后面
 
