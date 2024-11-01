@@ -1,7 +1,7 @@
 ---
 
 ### 本次搭建过程，参考此B站视频
-[链接](about:blank)
+https://www.bilibili.com/video/BV1Ju4m1c7WR/?spm_id_from=333.337.search-card.all.click
 
 ### 一、Nodejs 与 Git 下载与安装
 **1.Nodejs下载**
