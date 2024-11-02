@@ -1,0 +1,70 @@
+本人主要参考[超！个人博客搭建教程，详细，零代码，手截，WordPress_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1ac411B7Li/?spm_id_from=333.337.search -card.all.click&vd_source=1dbfcdd3bc12c44e3250e5e230a45acf)
+
+### 1.购买服务器
+
+<font style="color:rgb(24, 25, 28);"></font>
+
+> <font style="color:rgb(24, 25, 28);">首次登陆WordPress官网 https://cn.wordpress.org/</font>
+
+![](https://cdn.nlark.com/yuque/0/2024/png/49936975/1730468757484-8239969e-a2ce-4973-92e4-645ddde95d8d.png)
+
+下载完成后进入<font style="color:rgb(24, 25, 28);">彩虹云主机官网：https://www.cccyun.net/</font>
+
+![](https://cdn.nlark.com/yuque/0/2024/png/49936975/1730468872313-5724c2d2-4c69-490e-b216-1e0571e8f4ca.png)
+
+这里购买推荐香港高速主机
+
+![](https://cdn.nlark.com/yuque/0/2024/png/49936975/1730468969197-36c5222e-bb5a-4775-88ee-c7d421b42519.png)
+
+进入控制面板，把下载的文件放入wwwroot
+
+![](https://cdn.nlark.com/yuque/0/2024/png/49936975/1730469051187-eee71681-6800-4545-b907-710bafd4dac6.png)
+
+### 2.购买域名
+
+> 这里本人使用的是百度云
+
+首先进入百度云官网，进入域名服务
+
+![](https://cdn.nlark.com/yuque/0/2024/png/49936975/1730534414039-c7053707-5f39-46b9-818c-ac708047be15.png)
+
+购买好域名后，进入控制台。（需要系统实名认证，可能要等待一些时间）
+
+![](https://cdn.nlark.com/yuque/0/2024/png/49936975/1730534566076-bcece279-df8a-48d4-8b6f-00dff1608e05.png)
+
+进入域名管理并解析之前到注册的香港主机。
+
+![](https://cdn.nlark.com/yuque/0/2024/png/49936975/1730534688696-a5c6f1ef-452a-45e7-8621-f5c196b1cbcc.png)
+
+
+
+### 3.将域名和主机绑定
+
+> 需要购买的主机中配置域名
+
+![](https://cdn.nlark.com/yuque/0/2024/png/49936975/1730535065485-9d211c78-3b9a-45ac-9ddc-19ba977137bc.png)
+
+进入控制页面后将购买的域名信息复制粘贴，并填写网站管理员信息
+
+![](https://cdn.nlark.com/yuque/0/2024/png/49936975/1730535332960-ba625c48-7dfe-4e33-b2b0-76cf1cba3ce1.png)
+
+
+
+## 成果
+
+>最后点击创建即可
+
+可以通过浏览器进行搜索www.xenonpeach.top
+
+![](https://cdn.nlark.com/yuque/0/2024/png/49936975/1730536097400-512e4552-41af-4190-85a4-a969f9a6cb8e.png)
+
+
+
+## 总结
+
+> 初来乍到，对md文档的写作还有Github网站的处理还不是特别熟练，此文参考
+
+最后祝大家都能建立属于自己的博客（这只是最基础的，后续还可以再添加装饰）
+
+
+
