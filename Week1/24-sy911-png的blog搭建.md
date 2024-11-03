@@ -44,7 +44,7 @@ git -v
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/50077463/1730565340533-855ab0d9-3431-4717-96dd-e3acffb6b296.png)
 
-<h2 id="uVkvF">**<font style="color:rgb(0, 0, 0);">下载hexo</font>**</h2>
+<h2 id="uVkvF"><font style="color:rgb(0, 0, 0);">下载hexo</font></h2>
 在cmd里继续输入下面这行代码
 
 | ```plain npm install hexo-cli -g ```  |
