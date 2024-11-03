@@ -73,7 +73,7 @@ hexo init
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730646057406-d8a2451b-c26e-47c1-9558-e5b7e719abbb.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730532697677-f3ac3295-84f3-4cf3-86bc-b0af4a1255aa.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730649100573-039fb946-87a4-47af-ab6d-77f9a14e071c.png)
 
 然后初始化本地blog，将本地与GitHub page进行远程连接
 
