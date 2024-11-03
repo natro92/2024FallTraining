@@ -5,7 +5,7 @@
 | **web-Dre4m1nd** | **7** |  |  |  |  |  |  |  |  |
 | **web-flyfish** | **6** |  |  |  |  |  |  |  |  |
 | **pwn-themaster** | **8** |  |  |  |  |  |  |  |  |
-| **web-Big_freeze_mouse** |  |  |  |  |  |  |  |  |  |
+| **web-Big_freeze_mouse** | **8** |  |  |  |  |  |  |  |  |
 | **Re-Xenon** |  |  |  |  |  |  |  |  |  |
 | **misc-Lu0m0** |  |  |  |  |  |  |  |  |  |
 | **re-SdTVdp** |  |  |  |  |  |  |  |  |  |
