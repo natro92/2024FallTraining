@@ -79,3 +79,5 @@
 
 初步美化完成，以下是预览效果
 ![](https://s2.loli.net/2024/11/03/JCtQo9LPzhmfsuE.png)
+将这篇文章同步到blog中
+![](https://s2.loli.net/2024/11/03/BRdJisVEtp9CIfZ.png)
