@@ -103,31 +103,31 @@ ssh -T git@github.com
 1. <font style="color:rgb(31, 35, 40);">创建一个文件夹，用来放置博客文件</font>![](https://cdn.nlark.com/yuque/0/2024/png/50077463/1730621555203-8b3ed798-ed9f-41ec-b1e7-c493b09089c4.png)
 2. <font style="color:rgb(31, 35, 40);">打开文件夹，打开git bash对文件夹进行初始化，依次输入以下代码</font>
 
-:::info
+
 <font style="color:rgb(31, 35, 40);">npx hexo init</font>
 
-:::
+
 
 安装
 
-:::info
+
 <font style="color:rgb(31, 35, 40);">npx hexo install</font>
 
-:::
+
 
 <font style="color:rgb(31, 35, 40);">生成</font>
 
-:::info
+
 <font style="color:rgb(31, 35, 40);">npx hexo g</font>
 
-:::
+
 
 本地部署
 
-:::info
+
 <font style="color:rgb(31, 35, 40);">npx hexo s</font>
 
-:::
+
 
 <font style="color:rgb(31, 35, 40);">这之后我们就会得到一个链接，打开就可以看到我们的博客在本地部署啦，这就是我们的博客了，这里记得回到命令行点ctrl+c停止本地服务器，然后再关闭窗口</font>
 
@@ -145,25 +145,22 @@ ssh -T git@github.com
 <details class="lake-collapse"><summary id="u3f855a16"></summary><p id="ue4041bd9" class="ne-p"><span class="ne-text">deploy:</span></p><p id="uec026c91" class="ne-p"><span class="ne-text">    type: git</span></p><p id="u88f905bf" class="ne-p"><span class="ne-text">    repository: git@github.com:user name/user name.github.io.git</span></p><p id="ucac2b040" class="ne-p"><span class="ne-text">    branch: main</span></p></details>
 3. <font style="color:rgb(31, 35, 40);">然后桌面打开git bash，依次输入</font>
 
-:::info
+
 npm install hexo-deployer-git --save
 
-:::
 
-:::info
 + <font style="color:rgb(31, 31, 31);">npx hexo generate：生成静态文章，可以用</font>`<font style="color:rgb(244, 116, 102);">hexo g</font>`<font style="color:rgb(31, 31, 31);">缩写</font>
 + <font style="color:rgb(31, 31, 31);">npx hexo deploy：部署文章，可以用</font>`<font style="color:rgb(244, 116, 102);">hexo d</font>`<font style="color:rgb(31, 31, 31);">缩写</font>
 
-:::
+
 
 <font style="color:rgb(31, 31, 31);">因为第一次使用。需要写入自己的邮箱和用户名</font>
 
-:::info
+
 <font style="color:rgb(31, 31, 31);">git config --global user.email "你的邮箱"</font>
 
 <font style="color:rgb(31, 31, 31);">git config --global user.name "你的名字"</font>
 
-:::
 
 <font style="color:rgb(0, 0, 0);">配置完后再</font>`hexo d`<font style="color:rgb(0, 0, 0);">上传</font>
 
