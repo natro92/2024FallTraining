@@ -13,9 +13,9 @@ node.js下载网址：[Node.js — Run JavaScript Everywhere](https://nodejs.org
 ## 遇到的问题：
 在安装hexo的过程中总是报错，尝试过使用管理员权限、清除缓存、强制执行，但始终没有办法安装hexo，以下是两个典型报错图片
 
-![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730516227706-b299932d-441b-46ec-9f50-8edd4aa75855.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730646130898-066f635e-9fa4-434e-b502-078d81f00bd5.png)
 
-### ![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730516287760-64c8aa12-371b-48f0-a849-fc10360ce776.png)
+### ![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730646165719-cfc07d49-80d2-400c-a7c5-044222b04f95.png)
 ## 解决方法
 最后发现有可能是初始node.js版本过高，在node.js官网中下载更换node-v20.18.0-x64版本后，问题得以解决
 
@@ -55,7 +55,7 @@ hexo init
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730522937774-12b2a3f4-e62c-4bd0-9ec6-3ff1ad11a811.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730522950300-90d53e86-c7d5-4f22-a77e-fc263c75770d.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730646202758-b2a26b84-1cd6-43b6-8cb7-ccd2a245f970.png)
 
 然后设置主题，安装hexo插件
 
@@ -67,11 +67,11 @@ hexo init
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730524779633-5d94c527-acb4-4ccd-a44f-c0b831690ea1.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730524686925-d7ef2a69-d73e-4a32-b6f5-bcd9c60e6365.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730646027853-f490aadc-90ce-461d-bd0b-afe66358e2a3.png)
 
 远程连接成功
 
-![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730524973039-09e5db46-8c08-4248-bdd6-b59136608d07.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730646057406-d8a2451b-c26e-47c1-9558-e5b7e719abbb.png)
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730532697677-f3ac3295-84f3-4cf3-86bc-b0af4a1255aa.png)
 
@@ -91,33 +91,21 @@ GitHub page就配置完成了
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/48895444/1730527883408-964bff1c-ab76-4900-84cb-3431968b17cf.png)
 
+# 一点简单的git 操作
+## git bash 的操作
++ 新建文档：hexo new "文章标题"  
+地址位于source --> posts
++ 生成网页：hexo g
++ 运行博客：hexo s
++ 部署网站：hexo d
 
-
-git bash 的操作
-
-新建文档：hexo new "文章标题"
-
-	地址位于source --> posts
-
-生成网页：hexo g
-
-运行博客：hexo s
-
-
-
-git bash 与 github之间的操作
-
-添加文件：git add .
-
-提交本地仓库：git commit -m "commit-messages"
-
-提交远程仓库：git push origin main
-
-拉取远程文件：git pull
-
-创建本地分支：git branch temp
-
-强制推送：git push origin main --force
+## git bash 与 github之间的操作
++ 添加文件：git add .
++ 提交本地仓库：git commit -m "commit-messages"
++ 提交远程仓库：git push origin main
++ 拉取远程文件：git pull
++ 创建本地分支：git branch temp
++ 强制推送：git push origin main --force
 
 # 参考链接
 [https://pdpeng.github.io/2022/01/19/setup-personal-blog/](https://pdpeng.github.io/2022/01/19/setup-personal-blog/)
