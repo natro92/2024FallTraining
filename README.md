@@ -4,7 +4,7 @@
 | **cry-Monday** | **9** |  |  |  |  |  |  |  |  |
 | **web-Dre4m1nd** |  |  |  |  |  |  |  |  |  |
 | **web-flyfish** |  |  |  |  |  |  |  |  |  |
-| **pwn-themaster** |  |  |  |  |  |  |  |  |  |
+| **pwn-themaster** | **8** |  |  |  |  |  |  |  |  |
 | **web-Big_freeze_mouse** |  |  |  |  |  |  |  |  |  |
 | **Re-Xenon** |  |  |  |  |  |  |  |  |  |
 | **misc-Lu0m0** |  |  |  |  |  |  |  |  |  |
