@@ -5,6 +5,7 @@
 > [如何用Hexo搭建个人博客? (fiveth.cc)](https://blog.fiveth.cc/p/bb32/)   
 >
 
+博客地址https://floatingraft.github.io/
 ### 一、工具
 ##### 1.Github账号
 首先需要有一个Github账号，没有的在Github官网上注册一个[GitHub · Build and ship software on a single, collaborative platform · GitHub](https://github.com/)
