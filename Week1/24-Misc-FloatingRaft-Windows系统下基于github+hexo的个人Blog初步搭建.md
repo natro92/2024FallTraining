@@ -71,14 +71,12 @@ ssh-keygen -t rsa -C "你的邮箱"
 
 然后进入C:\Users\用户名，找到.ssh文件夹
 
-:::color3
 **<font style="color:#DF2A3F;">注意，用户文件夹名称必须是英文，不能包含中文！！</font>**
 
 **<font style="color:#DF2A3F;">若用户文件夹名为中文，删除.ssh文件夹，修改文件夹名后再重复上面生成.ssh的步骤</font>**
 
 **<font style="color:#DF2A3F;">具体修改用户文件夹名称的方法笔者没找到，更简便的方法是新建一个用户</font>**
 
-:::
 
 然后用记事本打开id_rsa.pub文件，全选文本内容复制
 
@@ -139,10 +137,8 @@ hexo s
   branch: main
 ```
 
-:::color3
 **<font style="color:#DF2A3F;">注意缩进格式，每行前面两个空格不要删，冒号后的一个空格也不要删</font>**
 
-:::
 
 <font style="color:#000000;">打开github，打开我们新建的仓库“用户名.github.io”，右上角点击Code，复制https链接</font>
 
@@ -161,7 +157,6 @@ hexo g
 hexo d
 ```
 
-:::color3
 如果是第一次使用git的话需要配置
 
 git config --global user.email "你的邮箱"  
@@ -171,7 +166,6 @@ git config --global user.name "用户名"
 
 在跳出来的窗口进行登录
 
-:::
 
 至此，个人Blog已初步搭建完成
 
