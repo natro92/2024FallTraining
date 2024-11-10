@@ -1,25 +1,25 @@
-# Áô°×µÄ¸öÈË²©¿Í´î½¨
+# ç•™ç™½çš„ä¸ªäººåšå®¢æ­å»º
 ---
-> ²Î¿¼ÎÄÕÂ
+> å‚è€ƒæ–‡ç« 
 >
 > <https://blog.fiveth.cc/p/bb32/>
 >
-> [¡¾Áã³É±¾¡¿Hexo¸öÈË²©¿Í´î½¨½Ì³Ì | ÎŞĞè·şÎñÆ÷_ßÙÁ¨ßÙÁ¨_bilibili](https://www.bilibili.com/video/BV1Ju4m1c7WR/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&vd_source=a01a62f772bf2e577e11004dfef0bde1)
-ÎÒÊÇ²Î¿¼ÁËMondayµÄblog´î½¨¹ı³Ì£¬Í¬Ñù²ÉÓÃHexo¿ò¼Ü£¬
+> [ã€é›¶æˆæœ¬ã€‘Hexoä¸ªäººåšå®¢æ­å»ºæ•™ç¨‹ | æ— éœ€æœåŠ¡å™¨_å“”å“©å“”å“©_bilibili](https://www.bilibili.com/video/BV1Ju4m1c7WR/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&vd_source=a01a62f772bf2e577e11004dfef0bde1)
+æˆ‘æ˜¯å‚è€ƒäº†Mondayçš„blogæ­å»ºè¿‡ç¨‹ï¼ŒåŒæ ·é‡‡ç”¨Hexoæ¡†æ¶ï¼Œ
 >
->²Î¿¼MondayingµÄmdÊéĞ´¸ñÊ½
+>å‚è€ƒMondayingçš„mdä¹¦å†™æ ¼å¼
 ---
-## Ò».×¼±¸¹¤×÷
+## ä¸€.å‡†å¤‡å·¥ä½œ
 
-1.Ê×ÏÈÈ¥ÏÂÔØÁË[node.js](https://nodejs.org/en)ºÍ[git](https://git-scm.com/downloads),È»ºó¼ìÑéÊÇ·ñÏÂÔØ³É¹¦
+1.é¦–å…ˆå»ä¸‹è½½äº†[node.js](https://nodejs.org/en)å’Œ[git](https://git-scm.com/downloads),ç„¶åæ£€éªŒæ˜¯å¦ä¸‹è½½æˆåŠŸ
 
   ![](https://picture.gptkong.com/20241101/005852fb2ae31b47a7a80a6a5ea5e9da4d.png)
 
-  ÔËÆøºÜºÃ£¬Ã»±¨Ê²Ã´´íÎó
+  è¿æ°”å¾ˆå¥½ï¼Œæ²¡æŠ¥ä»€ä¹ˆé”™è¯¯
 
-2.µ«ÊÇÔÚÏÂÔØHexoµÄÊ±ºò³öÏÖÎÊÌâ
+2.ä½†æ˜¯åœ¨ä¸‹è½½Hexoçš„æ—¶å€™å‡ºç°é—®é¢˜
 
-  ÏÈÊÇ²âÊÔÏÂÔØÁËexpress£¬´ò¿ªcmdÊäÈënpm install express -g³öÏÖ±¨´í
+  å…ˆæ˜¯æµ‹è¯•ä¸‹è½½äº†expressï¼Œæ‰“å¼€cmdè¾“å…¥npm install express -gå‡ºç°æŠ¥é”™
 
  ```
  npm error code ECONNRESET
@@ -33,11 +33,11 @@ npm error network If you are behind a proxy, please make sure that the
 npm error network 'proxy' config is set properly.  See: 'npm help config'
 npm error A complete log of this run can be found in: E:\nodejs\node_cache\_logs\2024-10-31T17_24_20_852Z-debug-0.log
  ```
- ·ÖÎöÒ»ÏÂÓ¦¸ÃÊÇ¹ÒÁËÌİ×ÓµÄÔ­Òò£¬Á¬½Ó³öÏÖ´íÎó£¬ÔÙ¼ÓÉÏÏÂÔØÔ´ËÙ¶È²»¹»
+ åˆ†æä¸€ä¸‹åº”è¯¥æ˜¯æŒ‚äº†æ¢¯å­çš„åŸå› ï¼Œè¿æ¥å‡ºç°é”™è¯¯ï¼Œå†åŠ ä¸Šä¸‹è½½æºé€Ÿåº¦ä¸å¤Ÿ
 
- °ÑÌİ×Ó¹Øµô£¬ÏÂÔØÔ´»»³ÉÌÔ±¦¾µÏñÔ´£¬ÊäÈënpm config set registry https://registry.npmmirror.com
+ æŠŠæ¢¯å­å…³æ‰ï¼Œä¸‹è½½æºæ¢æˆæ·˜å®é•œåƒæºï¼Œè¾“å…¥npm config set registry https://registry.npmmirror.com
 
- ÊäÈënpm install hexo-cli -g£¬ÏÔÊ¾
+ è¾“å…¥npm install hexo-cli -gï¼Œæ˜¾ç¤º
 
  ```
  added 53 packages in 7s
@@ -46,44 +46,44 @@ npm error A complete log of this run can be found in: E:\nodejs\node_cache\_logs
   run `npm fund` for details
  ```
 
- ~~Í´¿àÃæ¾ß£¬Ğ¡ÎÊÌâ¸ãÁË¼¸Ê®·ÖÖÓ£¨~~
+ ~~ç—›è‹¦é¢å…·ï¼Œå°é—®é¢˜æäº†å‡ ååˆ†é’Ÿï¼ˆ~~
 
  ---
 
-## ¶ş.´î½¨²Ö¿â
+## äºŒ.æ­å»ºä»“åº“
 
- ½øÈëGitHubµÇÂ¼×Ô¼ºµÄÕËºÅ£¬½øÈë¸öÈËÖ÷Ò³´´½¨ĞÂ²Ö¿â
+ è¿›å…¥GitHubç™»å½•è‡ªå·±çš„è´¦å·ï¼Œè¿›å…¥ä¸ªäººä¸»é¡µåˆ›å»ºæ–°ä»“åº“
 
 ![](https://img.picui.cn/free/2024/11/01/6724ceaa44777.png)
-ÃüÃûÎª
+å‘½åä¸º
 
-×Ô¼ºgithubÓÃ»§Ãû.github.io
+è‡ªå·±githubç”¨æˆ·å.github.io
 
-¹´Ñ¡publicºÍAdd a README file
+å‹¾é€‰publicå’ŒAdd a README file
 
-×îºóÀ­µ½×îµÍµã»÷create
+æœ€åæ‹‰åˆ°æœ€ä½ç‚¹å‡»create
 
 ---
 
-## Èı.ÅäÖÃSSH
+## ä¸‰.é…ç½®SSH
 
-Õâ¶ÔÎÒÀ´ËµÊÇ¼°ÆäÍ´¿àÒ»¿é²¿·Ö£¬»¨ÁËºÜ¶àÊ±¼äÊÔ´í
+è¿™å¯¹æˆ‘æ¥è¯´æ˜¯åŠå…¶ç—›è‹¦ä¸€å—éƒ¨åˆ†ï¼ŒèŠ±äº†å¾ˆå¤šæ—¶é—´è¯•é”™
 
-Õı³£À´ËµÎÒÖ»ĞèÒª´ò¿ªgit bashÈ»ºóÊäÈë```ssh-keygen -t rsa -C "ÓÊ¼şµØÖ·"```Á¬µãËÄÏÂenter¾Í¿ÉÒÔÁË
+æ­£å¸¸æ¥è¯´æˆ‘åªéœ€è¦æ‰“å¼€git bashç„¶åè¾“å…¥```ssh-keygen -t rsa -C "é‚®ä»¶åœ°å€"```è¿ç‚¹å››ä¸‹enterå°±å¯ä»¥äº†
 
-µ«ÊÇÓÉÓÚµ±³õ´´½¨WindowsÏµÍ³ÓÃ»§Ê±µÄÊèºö£¬ÎÒµÄÓÃ»§ÃûÎªÖĞÎÄ£¬CÅÌµÄUsersÎÄ¼şÏÂµÄÓÃ»§ÃûÒ²ÎªÖĞÎÄ
+ä½†æ˜¯ç”±äºå½“åˆåˆ›å»ºWindowsç³»ç»Ÿç”¨æˆ·æ—¶çš„ç–å¿½ï¼Œæˆ‘çš„ç”¨æˆ·åä¸ºä¸­æ–‡ï¼ŒCç›˜çš„Usersæ–‡ä»¶ä¸‹çš„ç”¨æˆ·åä¹Ÿä¸ºä¸­æ–‡
 
-µ¼ÖÂÒ»¿ªÊ¼µÄrsaÃÜÔ¿Ã»·¨Õı³£´´½¨£¬ÏÔÊ¾±àÂë´íÎó
+å¯¼è‡´ä¸€å¼€å§‹çš„rsaå¯†é’¥æ²¡æ³•æ­£å¸¸åˆ›å»ºï¼Œæ˜¾ç¤ºç¼–ç é”™è¯¯
 
-µ«ÊÇÎÊÌâ²»´ó£¬¶îÍâÌí¼ÓÒ»Ğ©Â·¾¶ÏŞÖÆ£¬Ê¹ËüÔÚÎÒµÄÁíÍâÒ»¸öÅÌ´´½¨.sshÎÄ¼şºÍrsaÃÜÔ¿
+ä½†æ˜¯é—®é¢˜ä¸å¤§ï¼Œé¢å¤–æ·»åŠ ä¸€äº›è·¯å¾„é™åˆ¶ï¼Œä½¿å®ƒåœ¨æˆ‘çš„å¦å¤–ä¸€ä¸ªç›˜åˆ›å»º.sshæ–‡ä»¶å’Œrsaå¯†é’¥
 
-ÊäÈë```ssh-keygen -t rsa -b 4096 -C "ÄãµÄÓÊ¼şµØÖ·" -f E:\.ssh\id_rsa```
+è¾“å…¥```ssh-keygen -t rsa -b 4096 -C "ä½ çš„é‚®ä»¶åœ°å€" -f E:\.ssh\id_rsa```
 
-´ò¿ª.sshÎÄ¼ş¼Ğ£¬ÓÃ±Ê¼Ç±¾´ò¿ªid_rsa.pub¸´ÖÆssh key
+æ‰“å¼€.sshæ–‡ä»¶å¤¹ï¼Œç”¨ç¬”è®°æœ¬æ‰“å¼€id_rsa.pubå¤åˆ¶ssh key
 
-´ò¿ªGitHubµÄsettings£¬Ñ¡ÔñSSH and GPS keys,µã»÷New SSH key£¬ÃüÃûËæÒâ£¬°Ñ¸´ÖÆµÄssh keyÕ³Ìù½øÈ¥¼´¿É
+æ‰“å¼€GitHubçš„settingsï¼Œé€‰æ‹©SSH and GPS keys,ç‚¹å‡»New SSH keyï¼Œå‘½åéšæ„ï¼ŒæŠŠå¤åˆ¶çš„ssh keyç²˜è´´è¿›å»å³å¯
 
-»Øµ½git bash,ÊäÈë```ssh -T git@github.com```£¬ÔÙÊäÈëyes£¬½á¹ûÓÖ±¨´í£¬Ã¿´Î±¨´í»¹¸÷²»ÏàÍ¬
+å›åˆ°git bash,è¾“å…¥```ssh -T git@github.com```ï¼Œå†è¾“å…¥yesï¼Œç»“æœåˆæŠ¥é”™ï¼Œæ¯æ¬¡æŠ¥é”™è¿˜å„ä¸ç›¸åŒ
 
 ```
 The authenticity of host 'github.com (20.205.243.166)' can't be established.
@@ -95,17 +95,17 @@ Failed to add the host to the list of known hosts (/c/Users/\301\364\260\327/.ss
 git@github.com: Permission denied (publickey).
 ```
 
-·ÖÎö±¨´í£¬Ó¦¸ÃÊÇgit bash»¹ÊÇÄ¬ÈÏ´ÓÎÒµÄC:\Users\Ãû×Ö ÀïÃæÕÒ.sshÎÄ¼ş£¬¼Ì¶ø±¨´íÖĞÎÄ±àÂëÒÔ¼°Ã»ÓĞÈÎºÎÎÄ¼ş
+åˆ†ææŠ¥é”™ï¼Œåº”è¯¥æ˜¯git bashè¿˜æ˜¯é»˜è®¤ä»æˆ‘çš„C:\Users\åå­— é‡Œé¢æ‰¾.sshæ–‡ä»¶ï¼Œç»§è€ŒæŠ¥é”™ä¸­æ–‡ç¼–ç ä»¥åŠæ²¡æœ‰ä»»ä½•æ–‡ä»¶
 
-Ó¦¸ÃÈÃËüÊ¶±ğµ½ÎÒÔÚEÅÌ´´½¨µÄ.sshÎÄ¼ş£¬ÎÒ×÷ÁËÒ»Ğ©³¢ÊÔ
+åº”è¯¥è®©å®ƒè¯†åˆ«åˆ°æˆ‘åœ¨Eç›˜åˆ›å»ºçš„.sshæ–‡ä»¶ï¼Œæˆ‘ä½œäº†ä¸€äº›å°è¯•
 
- 1.ÔÚ.sshÎÄ¼ş¼ĞÀïÃæ´´½¨known_hostsÎÄ¼ş£¬ÀïÃæÊäÈë
+ 1.åœ¨.sshæ–‡ä»¶å¤¹é‡Œé¢åˆ›å»ºknown_hostsæ–‡ä»¶ï¼Œé‡Œé¢è¾“å…¥
 
 ```
 github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0itCRTdd22hHhD1u5VZg2593EaO4zX3mU
 ```
 
- 2.ÔÚ.sshÎÄ¼ş¼ĞÀïÃæ´´½¨configÎÄ¼ş£¬ÀïÃæÊäÈë
+ 2.åœ¨.sshæ–‡ä»¶å¤¹é‡Œé¢åˆ›å»ºconfigæ–‡ä»¶ï¼Œé‡Œé¢è¾“å…¥
 
 ```
 Host github.com
@@ -115,14 +115,14 @@ Host github.com
     UserKnownHostsFile E:/ssh/known_hosts
 ```
 
- 3.git bashÊäÈë
+ 3.git bashè¾“å…¥
 
 ```
 eval "$(ssh-agent -s)"
 ssh-add E:/.ssh/id_rsa
 ```
 
-Íê³ÉÒÔÉÏ³¢ÊÔ£¬ÎÒÔÙ´ÎÊäÈë```ssh -T git@github.com```£¬³öÏÖ
+å®Œæˆä»¥ä¸Šå°è¯•ï¼Œæˆ‘å†æ¬¡è¾“å…¥```ssh -T git@github.com```ï¼Œå‡ºç°
 
 ```
 The authenticity of host 'github.com (20.205.243.166)' can't be established.
@@ -134,18 +134,18 @@ Failed to add the host to the list of known hosts (/c/Users/\301\364\260\327/.ss
 Hi liubaiqing! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-¿´ÆğÀ´ºÃÏñ»¹ÊÇÓĞĞ©Ğ¡ÎÊÌâ£¬²»¹ı×îºóÒ»¾ä»°ÒÑ¾­successÁË£¬½ÓÏÂÀ´³¢ÊÔ±¾µØ²¿Êğ
+çœ‹èµ·æ¥å¥½åƒè¿˜æ˜¯æœ‰äº›å°é—®é¢˜ï¼Œä¸è¿‡æœ€åä¸€å¥è¯å·²ç»successäº†ï¼Œæ¥ä¸‹æ¥å°è¯•æœ¬åœ°éƒ¨ç½²
 
 ---
 
 
-## ËÄ.±¾µØ²¿Êğ
+## å››.æœ¬åœ°éƒ¨ç½²
 
-ÏÈÕÒÒ»¸öÅÌ´´½¨ÎÄ¼ş¼Ğ£¬ÓÃÀ´´æ·ÅblogµÄÏà¹ØÎÄ¼ş
+å…ˆæ‰¾ä¸€ä¸ªç›˜åˆ›å»ºæ–‡ä»¶å¤¹ï¼Œç”¨æ¥å­˜æ”¾blogçš„ç›¸å…³æ–‡ä»¶
 
-ÔÚÕâ¸öÎÄ¼ş¼ĞÀï¿Õ°×´¦ÓÒ¼ü´ò¿ªgit bash
+åœ¨è¿™ä¸ªæ–‡ä»¶å¤¹é‡Œç©ºç™½å¤„å³é”®æ‰“å¼€git bash
 
-ÊäÈë```hexo init```,·µ»Ø
+è¾“å…¥```hexo init```,è¿”å›
 
 ```
 INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git
@@ -153,7 +153,7 @@ INFO  Install dependencies
 INFO  Start blogging with Hexo!
 ```
 
-ÊäÈë```hexo install```,·µ»Ø
+è¾“å…¥```hexo install```,è¿”å›
 
 ```
 INFO  Validating config
@@ -186,7 +186,7 @@ For more help, you can use 'hexo help [command]' for the detailed information
 or you can check the docs: https://hexo.io/docs/
 ```
 
-ÊäÈë```hexo g```,·µ»Ø
+è¾“å…¥```hexo g```,è¿”å›
 
 ```
 INFO  Validating config
@@ -206,7 +206,7 @@ INFO  Generated: 2024/11/01/hello-world/index.html
 INFO  11 files generated in 254 ms
 ```
 
-ÊäÈë```hexo s```,·µ»Ø
+è¾“å…¥```hexo s```,è¿”å›
 
 ```
 INFO  Validating config
@@ -214,15 +214,15 @@ INFO  Start processing
 INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
 ```
 
-³öÏÖÍøÖ·ºó¾Í¿ÉÒÔ³¢ÊÔ½øÈëÁË£¬¿´ÆğÀ´Ó¦¸ÃÊÇÕâÑù×Ó
+å‡ºç°ç½‘å€åå°±å¯ä»¥å°è¯•è¿›å…¥äº†ï¼Œçœ‹èµ·æ¥åº”è¯¥æ˜¯è¿™æ ·å­
 ![](https://img.picui.cn/free/2024/11/01/6724d8a5a5287.png)
 
 ---
 
-## Îå.ÉÏÏß²©¿Í
+## äº”.ä¸Šçº¿åšå®¢
 
-ÔÚÄãµÄ²©¿ÍÎÄ¼ş¼ĞÀïÃæÕÒµ½_config.ymlÎÄ¼ş£¬ÓÃ¼ÇÊÂ±¾´ò¿ª
-À­µ½µ×ÕÒµ½deploy£¬°ÑËüºóÃæµÄÈ«²¿É¾µô£¬Õ³ÌùÕâ¸ö
+åœ¨ä½ çš„åšå®¢æ–‡ä»¶å¤¹é‡Œé¢æ‰¾åˆ°_config.ymlæ–‡ä»¶ï¼Œç”¨è®°äº‹æœ¬æ‰“å¼€
+æ‹‰åˆ°åº•æ‰¾åˆ°deployï¼ŒæŠŠå®ƒåé¢çš„å…¨éƒ¨åˆ æ‰ï¼Œç²˜è´´è¿™ä¸ª
 
 ```
   type: git
@@ -230,12 +230,12 @@ INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
   branch: main
 ```
 
-È¥×Ô¼ºµÄGitHub²Ö¿âµã»÷code£¬¸´ÖÆhttpsÁ´½Ó£¬Õ³Ìùµ½_config.yml¼ÇÊÂ±¾ÀïÃæµÄ```repository: ```ºóÃæ
-±£´æÍË³ö
+å»è‡ªå·±çš„GitHubä»“åº“ç‚¹å‡»codeï¼Œå¤åˆ¶httpsé“¾æ¥ï¼Œç²˜è´´åˆ°_config.ymlè®°äº‹æœ¬é‡Œé¢çš„```repository: ```åé¢
+ä¿å­˜é€€å‡º
 
-»Øµ½²©¿ÍÎÄ¼ş¼ĞµÄgit bash
+å›åˆ°åšå®¢æ–‡ä»¶å¤¹çš„git bash
 
-°²×°×Ô¶¯²¿Êğ·¢²¼¹¤¾ß
+å®‰è£…è‡ªåŠ¨éƒ¨ç½²å‘å¸ƒå·¥å…·
 
 ```
 npm install hexo-deployer-git --save
@@ -243,7 +243,7 @@ hexo g
 hexo d
 ```
 
-·µ»Ø
+è¿”å›
 
 ```
 INFO  Validating config
@@ -272,7 +272,7 @@ Run
 to set your account's default identity.
 Omit --global to set the identity only in this repository.
 
-fatal: unable to auto-detect email address (got 'Áô°×@LAPTOP-QJ1JI6GM.(none)')
+fatal: unable to auto-detect email address (got 'ç•™ç™½@LAPTOP-QJ1JI6GM.(none)')
 error: src refspec HEAD does not match any
 error: failed to push some refs to 'https://github.com/liubaiqing/liubai.github.io.git'
 FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html
@@ -283,16 +283,16 @@ Error: Spawn failed
     at ChildProcess._handle.onexit (node:internal/child_process:293:12)
 ```
 
-ÒòÎªÊÇµÚÒ»´ÎÅäÖÃ£¬ÌáÊ¾ÎÒÃÇÊäÈëÓÊÏäºÍÓÃ»§Ãû£¬ÒÑ¾­ÓĞÁËÊ¾Àı
+å› ä¸ºæ˜¯ç¬¬ä¸€æ¬¡é…ç½®ï¼Œæç¤ºæˆ‘ä»¬è¾“å…¥é‚®ç®±å’Œç”¨æˆ·åï¼Œå·²ç»æœ‰äº†ç¤ºä¾‹
 
 ```
  git config --global user.email "you@example.com"
  git config --global user.name "Your Name"
 ```
 
-¸ù¾İ¸ñÊ½ĞŞ¸ÄÊäÈë¼´¿É
+æ ¹æ®æ ¼å¼ä¿®æ”¹è¾“å…¥å³å¯
 
-ÔÙÊäÈë```hexo d```ÉÏ´«£¬¿ÉÄÜ»á³öÏÖ
+å†è¾“å…¥```hexo d```ä¸Šä¼ ï¼Œå¯èƒ½ä¼šå‡ºç°
 
 ```
 INFO  Validating config
@@ -320,9 +320,9 @@ Error: Spawn failed
     at ChildProcess._handle.onexit (node:internal/child_process:293:12)
 ```
 
-ÕâÖÖÇé¿öËÆºõÊÇÒòÎªÄãµÄÍøÂçÁ¬½ÓÎÊÌâ£¬¿ÉÒÔ³¢ÊÔ¹Ò¸öÌİ×Ó»òÕß·´¸´³¢ÊÔÊäÈë```hexo d```À´½â¾öÕâ¸öÎÊÌâ
+è¿™ç§æƒ…å†µä¼¼ä¹æ˜¯å› ä¸ºä½ çš„ç½‘ç»œè¿æ¥é—®é¢˜ï¼Œå¯ä»¥å°è¯•æŒ‚ä¸ªæ¢¯å­æˆ–è€…åå¤å°è¯•è¾“å…¥```hexo d```æ¥è§£å†³è¿™ä¸ªé—®é¢˜
 
-Ö®ºó¾Í»áµ¯³öGitHubÕË»§µÇÂ½µÄµ¯´°£¬³É¹¦ºóÏÔÊ¾Õâ¸ö
+ä¹‹åå°±ä¼šå¼¹å‡ºGitHubè´¦æˆ·ç™»é™†çš„å¼¹çª—ï¼ŒæˆåŠŸåæ˜¾ç¤ºè¿™ä¸ª
 ```
 INFO  Validating config
 INFO  Deploying: git
@@ -354,21 +354,21 @@ branch 'master' set up to track 'https://github.com/liubaiqing/liubai.github.io.
 INFO  Deploy done: git
 ```
 
-Ö®ºó¾Í¿ÉÒÔ´ò¿ªä¯ÀÀÆ÷µØÖ·ÊäÈëÄãµÄGitHub²Ö¿âÃû£¬¼´¿É½øÈëÄãµÄÍøÕ¾
+ä¹‹åå°±å¯ä»¥æ‰“å¼€æµè§ˆå™¨åœ°å€è¾“å…¥ä½ çš„GitHubä»“åº“åï¼Œå³å¯è¿›å…¥ä½ çš„ç½‘ç«™
 
-ÎÒµÄblog
+æˆ‘çš„blog
 
-[https://liubai.github.io](https://liubai.github.io)
+[https://liubai.github.io](https://liubai.me)
 
 ---
 
-## Áù.×Ü½á¸ĞÏë
-Ò»¸ö²©¿Í´î½¨»¨ÁËÎÒ²î²»¶àÒ»Ìì£¬´ó´óĞ¡Ğ¡µÄÎÊÌâ½ÓÁ¬²»¶Ï£¬
-ºÜ¶à´Î¶¼Ïë·ÅÆú£¬²»¹ıºÃÔÚÍøÉÏ¶¼ÓĞÏà¹Ø×ÊÔ´¿ÉÒÔ²Î¿¼£¬
-×îºó»¹ÊÇÃãÇ¿´î½¨ÁËÒ»¸ö²»ÏñÑùµÄblog
-²»¹ıÈ·ÊµÒ²Ñ§ÁËºÜ¶à¶«Î÷£¬±ÈÈçmarkdownÎÄµµÓïÑÔºÍgitµÄ»ù±¾Ê¹ÓÃ£¬ÒÔÇ°¶¼ÊÇÌıËµ¹ıËüÃÇ£¬
-µ«ÊÇÒ»Ö±ÕÒ²»µ½Ê±¼äÒ²Ã»ÓĞÊ²Ã´¶¯Á¦È¥Ñ§Ï°ÕâĞ©£¬¿´µ½HnuSec-StarµÄÇï¼¾ÑµÁ·£¬
-¾ö¶¨»¹ÊÇÈ¥³¢ÊÔ×öÒÔÇ°Ã»×ö¹ıµÄÊÂÇé
+## å…­.æ€»ç»“æ„Ÿæƒ³
+ä¸€ä¸ªåšå®¢æ­å»ºèŠ±äº†æˆ‘å·®ä¸å¤šä¸€å¤©ï¼Œå¤§å¤§å°å°çš„é—®é¢˜æ¥è¿ä¸æ–­ï¼Œ
+å¾ˆå¤šæ¬¡éƒ½æƒ³æ”¾å¼ƒï¼Œä¸è¿‡å¥½åœ¨ç½‘ä¸Šéƒ½æœ‰ç›¸å…³èµ„æºå¯ä»¥å‚è€ƒï¼Œ
+æœ€åè¿˜æ˜¯å‹‰å¼ºæ­å»ºäº†ä¸€ä¸ªä¸åƒæ ·çš„blog
+ä¸è¿‡ç¡®å®ä¹Ÿå­¦äº†å¾ˆå¤šä¸œè¥¿ï¼Œæ¯”å¦‚markdownæ–‡æ¡£è¯­è¨€å’Œgitçš„åŸºæœ¬ä½¿ç”¨ï¼Œä»¥å‰éƒ½æ˜¯å¬è¯´è¿‡å®ƒä»¬ï¼Œ
+ä½†æ˜¯ä¸€ç›´æ‰¾ä¸åˆ°æ—¶é—´ä¹Ÿæ²¡æœ‰ä»€ä¹ˆåŠ¨åŠ›å»å­¦ä¹ è¿™äº›ï¼Œçœ‹åˆ°HnuSec-Starçš„ç§‹å­£è®­ç»ƒï¼Œ
+å†³å®šè¿˜æ˜¯å»å°è¯•åšä»¥å‰æ²¡åšè¿‡çš„äº‹æƒ…
 
 ---
 
