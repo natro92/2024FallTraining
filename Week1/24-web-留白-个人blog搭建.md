@@ -358,7 +358,7 @@ INFO  Deploy done: git
 
 我的blog
 
-[https://liubai.github.io](https://liubai.me)
+[https://liubai.me](https://liubai.me)
 
 ---
 
