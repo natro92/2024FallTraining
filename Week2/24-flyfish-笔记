@@ -23,49 +23,49 @@ newstar2024 week1 ÒÅÊ§µÄÀ­Á´
 
 
 
-<font style="color:rgb(77, 77, 77);">== £º</font>**<font style="color:rgb(77, 77, 77);">Ö»±È½ÏÖµ</font>**  
-<font style="color:rgb(77, 77, 77);">=== £º</font>**<font style="color:rgb(77, 77, 77);">±È½ÏÖµºÍÀàÐÍ</font>**
+== £º**Ö»±È½ÏÖµ**  
+=== £º**±È½ÏÖµºÍÀàÐÍ**
 
 ### ³£¹æµÄ0eÈÆ¹ý
 Ô­Àí£º
 
-<font style="color:rgb(34, 34, 34);">PHPÔÚ´¦Àí¹þÏ£×Ö·û´®Ê±£¬Ëü°ÑÃ¿Ò»¸öÒÔ¡°0E¡±¿ªÍ·µÄ¹þÏ£Öµ¶¼½âÊÍÎª0£¬ËùÒÔÈç¹ûÁ½¸ö²»Í¬µÄÃÜÂë¾­¹ý¹þÏ£ÒÔºó£¬Æä¹þÏ£Öµ¶¼ÊÇÒÔ¡°0E¡±¿ªÍ·µÄ£¬PHP»áµ±×÷¿ÆÑ§¼ÆÊý·¨À´´¦Àí£¬Ò²¾ÍÊÇ0µÄn´Î·½£¬µÃµ½µÄÖµ±È½ÏµÄÊ±ºò¶¼ÏàÍ¬¡£</font>
+PHPÔÚ´¦Àí¹þÏ£×Ö·û´®Ê±£¬Ëü°ÑÃ¿Ò»¸öÒÔ¡°0E¡±¿ªÍ·µÄ¹þÏ£Öµ¶¼½âÊÍÎª0£¬ËùÒÔÈç¹ûÁ½¸ö²»Í¬µÄÃÜÂë¾­¹ý¹þÏ£ÒÔºó£¬Æä¹þÏ£Öµ¶¼ÊÇÒÔ¡°0E¡±¿ªÍ·µÄ£¬PHP»áµ±×÷¿ÆÑ§¼ÆÊý·¨À´´¦Àí£¬Ò²¾ÍÊÇ0µÄn´Î·½£¬µÃµ½µÄÖµ±È½ÏµÄÊ±ºò¶¼ÏàÍ¬¡£
 
-<font style="color:rgb(34, 34, 34);">×¢£ºÕâÖÖ·½Ê½Ö»ÓÐÔÚÈçÏÂÈõ±È½ÏµÄÊ±ºò²ÅÄÜÊ¹ÓÃ¡£</font>
+×¢£ºÕâÖÖ·½Ê½Ö»ÓÐÔÚÈçÏÂÈõ±È½ÏµÄÊ±ºò²ÅÄÜÊ¹ÓÃ¡£
 
-<font style="color:rgb(77, 77, 77);">if (md5($str1) == md5($str2))</font>
+if (md5($str1) == md5($str2))
 
-**<font style="color:rgb(34, 34, 34);">ÒÔÏÂÖµÔÚmd5¼ÓÃÜºóÒÔ0E¿ªÍ·£º</font>**
+**ÒÔÏÂÖµÔÚmd5¼ÓÃÜºóÒÔ0E¿ªÍ·£º**
 
-+ <font style="color:rgb(34, 34, 34);">QNKCDZO</font>
-+ <font style="color:rgb(34, 34, 34);">240610708</font>
-+ <font style="color:rgb(34, 34, 34);">s878926199a</font>
-+ <font style="color:rgb(34, 34, 34);">s155964671a</font>
-+ <font style="color:rgb(34, 34, 34);">s214587387a</font>
-+ <font style="color:rgb(34, 34, 34);">s214587387a</font>
++ QNKCDZO
++ 240610708
++ s878926199a
++ s155964671a
++ s214587387a
++ s214587387a
 
 #### ÌØÊâÇé¿ö£º
-<font style="color:rgb(79, 79, 79);">$a==md5($a)</font>
+$a==md5($a)
 
-<font style="color:rgb(77, 77, 77);">0e21596201µÄ MD5 ÖµÒ²ÊÇÓÉ </font>**<font style="color:rgb(77, 77, 77);">0e</font>**<font style="color:rgb(77, 77, 77);"> ¿ªÍ·£¬ÔÚ PHP ÈõÀàÐÍ±È½ÏÖÐÏàµÈ</font>
+0e21596201µÄ MD5 ÖµÒ²ÊÇÓÉ **0e** ¿ªÍ·£¬ÔÚ PHP ÈõÀàÐÍ±È½ÏÖÐÏàµÈ
 
 ### Êý×éÈÆ¹ý
-Ô­Àí£º<font style="color:rgb(34, 34, 34);">¶ÔÓÚphp</font><u><font style="color:#000000;">Ç¿±È½ÏºÍÈõ±È½Ï</font></u><font style="color:rgb(34, 34, 34);">£º</font>md5<font style="color:rgb(34, 34, 34);">()£¬sha1()º¯ÊýÎÞ·¨´¦ÀíÊý×é£¬Èç¹û´«ÈëµÄÎªÊý×é£¬»á·µ»ØNULL£¬ËùÒÔÁ½¸öÊý×é¾­¹ý¼ÓÃÜºóµÃµ½µÄ¶¼ÊÇNULL£¬Ò²¾ÍÊÇÏàµÈµÄ¡£</font>
+Ô­Àí£º¶ÔÓÚphp<u>Ç¿±È½ÏºÍÈõ±È½Ï</u>£ºmd5()£¬sha1()º¯ÊýÎÞ·¨´¦ÀíÊý×é£¬Èç¹û´«ÈëµÄÎªÊý×é£¬»á·µ»ØNULL£¬ËùÒÔÁ½¸öÊý×é¾­¹ý¼ÓÃÜºóµÃµ½µÄ¶¼ÊÇNULL£¬Ò²¾ÍÊÇÏàµÈµÄ¡£
 
-[**<font style="color:#585A5A;">if</font>**<font style="color:#585A5A;"> ($a!==$b && md5($a)===md5($b))</font>](about:blank)
+ if($a!==$b && md5($a)===md5($b))
 
-<font style="color:#585A5A;">Òò´ËÖ»ÐèÒª¹¹½¨ÈçÏÂËùÊ¾Êý×é¼Æ¿Æ==¼´¿É</font>
+Òò´ËÖ»ÐèÒª¹¹½¨ÈçÏÂËùÊ¾Êý×é¼Æ¿Æ==¼´¿É
 
-<font style="color:#8A8F8D;">?a[]=1&b[]=2</font>
+?a[]=1&b[]=2
 
 ### MD5Åö×²
-<font style="color:#000000;">if((string)$_POST['a']!==(string)$_POST['b'] )</font>
+if((string)$_POST['a']!==(string)$_POST['b'] )
 
-<font style="color:rgb(0, 0, 0);">a=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d%c0%78%3e%7b%95%18%af%bf%a2%00%a8%28%4b%f3%6e%8e%4b%55%b3%5f%42%75%93%d8%49%67%6d%a0%d1%55%5d%83%60%fb%5f%07%fe%a2</font>
+a=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d%c0%78%3e%7b%95%18%af%bf%a2%00%a8%28%4b%f3%6e%8e%4b%55%b3%5f%42%75%93%d8%49%67%6d%a0%d1%55%5d%83%60%fb%5f%07%fe%a2
 
-<font style="color:rgb(0, 0, 0);">b=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d%c0%78%3e%7b%95%18%af%bf%a2%02%a8%28%4b%f3%6e%8e%4b%55%b3%5f%42%75%93%d8%49%67%6d%a0%d1%d5%5d%83%60%fb%5f%07%fe%a2</font>
+b=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d%c0%78%3e%7b%95%18%af%bf%a2%02%a8%28%4b%f3%6e%8e%4b%55%b3%5f%42%75%93%d8%49%67%6d%a0%d1%d5%5d%83%60%fb%5f%07%fe%a2
 
-<font style="color:rgb(77, 77, 77);">½øÐÐurl½âÂëºóµÄMD5ÖµÏàµÈ</font>
+½øÐÐurl½âÂëºóµÄMD5ÖµÏàµÈ
 
 ### Ë«MD5ÈÆ¹ý
 ²Î¿¼ÎÄµµ£º
@@ -118,11 +118,11 @@ data://text/plain;base64,QXVyYQ==
 $data = file_get_contents('data:text/plain;base64,SGVsbG8sIFdvcmxkIQ==');  
 
 ####  file:// 
-<font style="color:rgb(77, 77, 77);">ÓÃÍ¾£ºÓÃÓÚ·ÃÎÊ±¾µØÎÄ¼þÏµÍ³£¬²¢ÇÒ²»ÊÜallow_url_fopen£¬allow_url_includeÓ°Ïì</font>  
-<font style="color:rgb(77, 77, 77);">Óï·¨£ºfile://Ð­ÒéÖ÷ÒªÓÃÓÚ·ÃÎÊÎÄ¼þ(¾ø¶ÔÂ·¾¶¡¢Ïà¶ÔÂ·¾¶ÒÔ¼°ÍøÂçÂ·¾¶)</font>  
-<font style="color:rgb(77, 77, 77);">Ê¾Àý£º</font>
+ÓÃÍ¾£ºÓÃÓÚ·ÃÎÊ±¾µØÎÄ¼þÏµÍ³£¬²¢ÇÒ²»ÊÜallow_url_fopen£¬allow_url_includeÓ°Ïì  
+Óï·¨£ºfile://Ð­ÒéÖ÷ÒªÓÃÓÚ·ÃÎÊÎÄ¼þ(¾ø¶ÔÂ·¾¶¡¢Ïà¶ÔÂ·¾¶ÒÔ¼°ÍøÂçÂ·¾¶)  
+Ê¾Àý£º
 
-<font style="color:rgb(77, 77, 77);">http://www.xx.com?file=file:///etc/passsword</font>
+http://www.xx.com?file=file:///etc/passsword
 
 #### http://
 ÓÃÍ¾£º Í¨¹ý HTTP(S) Ð­ÒéÇëÇóÔ¶³Ì×ÊÔ´£¬ÊÊºÏ·ÃÎÊÍâ²¿ÍøÕ¾»ò API¡£  
@@ -132,37 +132,37 @@ $data = file_get_contents('data:text/plain;base64,SGVsbG8sIFdvcmxkIQ==');
 $content = file_get_contents('http://example.com');  
 
 #### php:// 
-</font>
-ÓÃÍ¾£ºphp://<font style="color:rgb(33, 37, 41);"> ·ÃÎÊ¸÷¸öÊäÈë/Êä³öÁ÷£¨I/O streams£©£¬ÔÚCTFÖÐ¾­³£Ê¹ÓÃµÄÊÇ</font>php://filter<font style="color:rgb(33, 37, 41);">ºÍ</font>php://input<font style="color:rgb(33, 37, 41);">£¬</font>php://filter<font style="color:rgb(33, 37, 41);">ÓÃÓÚ¶ÁÈ¡Ô´Âë£¬</font>php://input<font style="color:rgb(33, 37, 41);">ÓÃÓÚÖ´ÐÐphp´úÂë¡£</font>
 
-<font style="color:rgb(33, 37, 41);">ËµÃ÷£º  
-</font><font style="color:rgb(33, 37, 41);">PHP Ìá¹©ÁËÒ»Ð©ÔÓÏîÊäÈë/Êä³ö£¨IO£©Á÷£¬ÔÊÐí·ÃÎÊ PHP µÄÊäÈëÊä³öÁ÷¡¢±ê×¼ÊäÈëÊä³öºÍ´íÎóÃèÊö·û£¬  
-</font><font style="color:rgb(33, 37, 41);">ÄÚ´æÖÐ¡¢´ÅÅÌ±¸·ÝµÄÁÙÊ±ÎÄ¼þÁ÷ÒÔ¼°¿ÉÒÔ²Ù×÷ÆäËû¶ÁÈ¡Ð´ÈëÎÄ¼þ×ÊÔ´µÄ¹ýÂËÆ÷¡£</font>
+ÓÃÍ¾£ºphp:// ·ÃÎÊ¸÷¸öÊäÈë/Êä³öÁ÷£¨I/O streams£©£¬ÔÚCTFÖÐ¾­³£Ê¹ÓÃµÄÊÇphp://filterºÍphp://input£¬php://filterÓÃÓÚ¶ÁÈ¡Ô´Âë£¬php://inputÓÃÓÚÖ´ÐÐphp´úÂë¡£
 
-| **<font style="color:rgb(33, 37, 41);">Ð­Òé</font>**    | **<font style="color:rgb(33, 37, 41);">×÷ÓÃ</font>**         |
+ËµÃ÷£º  
+PHP Ìá¹©ÁËÒ»Ð©ÔÓÏîÊäÈë/Êä³ö£¨IO£©Á÷£¬ÔÊÐí·ÃÎÊ PHP µÄÊäÈëÊä³öÁ÷¡¢±ê×¼ÊäÈëÊä³öºÍ´íÎóÃèÊö·û£¬  
+ÄÚ´æÖÐ¡¢´ÅÅÌ±¸·ÝµÄÁÙÊ±ÎÄ¼þÁ÷ÒÔ¼°¿ÉÒÔ²Ù×÷ÆäËû¶ÁÈ¡Ð´ÈëÎÄ¼þ×ÊÔ´µÄ¹ýÂËÆ÷¡£
+
+| **Ð­Òé**    | **×÷ÓÃ**         |
 | :------------------------------------------------------ | :----------------------------------------------------------- |
-| <font style="color:rgb(33, 37, 41);">php://input</font> | <font style="color:rgb(33, 37, 41);">¿ÉÒÔ·ÃÎÊÇëÇóµÄÔ­Ê¼Êý¾ÝµÄÖ»¶ÁÁ÷£¬ÔÚPOSTÇëÇóÖÐ·ÃÎÊPOSTµÄ</font>`data`<font style="color:rgb(33, 37, 41);">²¿·Ö£¬ÔÚ</font>`enctype="multipart/form-data"`<font style="color:rgb(33, 37, 41);"> </font><font style="color:rgb(33, 37, 41);">µÄÊ±ºò</font>`php://input `<font style="color:rgb(33, 37, 41);">ÊÇÎÞÐ§µÄ¡£</font> |
+| php://input | ¿ÉÒÔ·ÃÎÊÇëÇóµÄÔ­Ê¼Êý¾ÝµÄÖ»¶ÁÁ÷£¬ÔÚPOSTÇëÇóÖÐ·ÃÎÊPOSTµÄ`data`²¿·Ö£¬ÔÚ`enctype="multipart/form-data"` µÄÊ±ºò`php://input `ÊÇÎÞÐ§µÄ¡£ |
 
 
-| <font style="color:rgb(33, 37, 41);">php://filter</font> | <font style="color:rgb(33, 37, 41);">(>=5.0.0)Ò»ÖÖÔª·â×°Æ÷£¬Éè¼ÆÓÃÓÚÊý¾ÝÁ÷´ò¿ªÊ±µÄÉ¸Ñ¡¹ýÂËÓ¦ÓÃ¡£¶ÔÓÚÒ»ÌåÊ½</font>`£¨all-in-one£©`<font style="color:rgb(33, 37, 41);">µÄÎÄ¼þº¯Êý·Ç³£ÓÐÓÃ£¬ÀàËÆ</font><font style="color:rgb(33, 37, 41);"> </font>`readfile()`¡¢`file()`ºÍ<font style="color:rgb(33, 37, 41);"> </font>`file_get_contents()`<font style="color:rgb(33, 37, 41);">£¬ÔÚÊý¾ÝÁ÷ÄÚÈÝ¶ÁÈ¡Ö®Ç°Ã»ÓÐ»ú»áÓ¦ÓÃÆäËû¹ýÂËÆ÷¡£</font> |
+| php://filter | (>=5.0.0)Ò»ÖÖÔª·â×°Æ÷£¬Éè¼ÆÓÃÓÚÊý¾ÝÁ÷´ò¿ªÊ±µÄÉ¸Ñ¡¹ýÂËÓ¦ÓÃ¡£¶ÔÓÚÒ»ÌåÊ½`£¨all-in-one£©`µÄÎÄ¼þº¯Êý·Ç³£ÓÐÓÃ£¬ÀàËÆ `readfile()`¡¢`file()`ºÍ `file_get_contents()`£¬ÔÚÊý¾ÝÁ÷ÄÚÈÝ¶ÁÈ¡Ö®Ç°Ã»ÓÐ»ú»áÓ¦ÓÃÆäËû¹ýÂËÆ÷¡£ |
 | :------------------------------------------------------- | :----------------------------------------------------------- |
 
 
-php://filter<font style="color:rgb(33, 37, 41);">²ÎÊýÏê½â</font>
+php://filter²ÎÊýÏê½â
 
-<font style="color:rgb(33, 37, 41);">¸ÃÐ­ÒéµÄ²ÎÊý»áÔÚ¸ÃÐ­ÒéÂ·¾¶ÉÏ½øÐÐ´«µÝ£¬¶à¸ö²ÎÊý¶¼¿ÉÒÔÔÚÒ»¸öÂ·¾¶ÉÏ´«µÝ¡£¾ßÌå²Î¿¼ÈçÏÂ£º</font>
+¸ÃÐ­ÒéµÄ²ÎÊý»áÔÚ¸ÃÐ­ÒéÂ·¾¶ÉÏ½øÐÐ´«µÝ£¬¶à¸ö²ÎÊý¶¼¿ÉÒÔÔÚÒ»¸öÂ·¾¶ÉÏ´«µÝ¡£¾ßÌå²Î¿¼ÈçÏÂ£º
 
-| **<font style="color:rgb(33, 37, 41);">php://filter ²ÎÊý</font>** | **<font style="color:rgb(33, 37, 41);">ÃèÊö</font>** | |
+| **php://filter ²ÎÊý** | **ÃèÊö** | |
 | :--- | :--- | --- |
-| <font style="color:rgb(33, 37, 41);">resource=<Òª¹ýÂËµÄÊý¾ÝÁ÷></font> | <font style="color:rgb(33, 37, 41);">±ØÐëÏî¡£ËüÖ¸¶¨ÁËÄãÒªÉ¸Ñ¡¹ýÂËµÄÊý¾ÝÁ÷¡£</font> | |
-| <font style="color:rgb(33, 37, 41);">read=<¶ÁÁ´µÄ¹ýÂËÆ÷></font> | ¿ÉÑ¡Ïî¡£¿ÉÒÔÉè¶¨Ò»¸ö»ò¶à¸ö¹ýÂËÆ÷Ãû³Æ£¬ÒÔ¹ÜµÀ·û£¨*\ | <font style="color:rgb(33, 37, 41);">*£©·Ö¸ô¡£</font> |
-| <font style="color:rgb(33, 37, 41);">write=<Ð´Á´µÄ¹ýÂËÆ÷></font> | ¿ÉÑ¡Ïî¡£¿ÉÒÔÉè¶¨Ò»¸ö»ò¶à¸ö¹ýÂËÆ÷Ãû³Æ£¬ÒÔ¹ÜµÀ·û£¨ | <font style="color:rgb(33, 37, 41);">£©·Ö¸ô¡£</font> |
-| <font style="color:rgb(33, 37, 41);"><; Á½¸öÁ´µÄ¹ýÂËÆ÷></font> | <font style="color:rgb(33, 37, 41);">ÈÎºÎÃ»ÓÐÒÔ</font><font style="color:rgb(33, 37, 41);"> </font>_<font style="color:rgb(33, 37, 41);">read=</font>_<font style="color:rgb(33, 37, 41);"> </font><font style="color:rgb(33, 37, 41);">»ò</font><font style="color:rgb(33, 37, 41);"> </font>_<font style="color:rgb(33, 37, 41);">write=</font>_<font style="color:rgb(33, 37, 41);"> </font><font style="color:rgb(33, 37, 41);">×÷Ç°×ºµÄÉ¸Ñ¡Æ÷ÁÐ±í»áÊÓÇé¿öÓ¦ÓÃÓÚ¶Á»òÐ´Á´¡£</font> | |
+| resource=<Òª¹ýÂËµÄÊý¾ÝÁ÷> | ±ØÐëÏî¡£ËüÖ¸¶¨ÁËÄãÒªÉ¸Ñ¡¹ýÂËµÄÊý¾ÝÁ÷¡£ | |
+| read=<¶ÁÁ´µÄ¹ýÂËÆ÷> | ¿ÉÑ¡Ïî¡£¿ÉÒÔÉè¶¨Ò»¸ö»ò¶à¸ö¹ýÂËÆ÷Ãû³Æ£¬ÒÔ¹ÜµÀ·û£¨*\ | *£©·Ö¸ô¡£ |
+| write=<Ð´Á´µÄ¹ýÂËÆ÷> | ¿ÉÑ¡Ïî¡£¿ÉÒÔÉè¶¨Ò»¸ö»ò¶à¸ö¹ýÂËÆ÷Ãû³Æ£¬ÒÔ¹ÜµÀ·û£¨ | £©·Ö¸ô¡£ |
+| <; Á½¸öÁ´µÄ¹ýÂËÆ÷> | ÈÎºÎÃ»ÓÐÒÔ _read=_ »ò _write=_ ×÷Ç°×ºµÄÉ¸Ñ¡Æ÷ÁÐ±í»áÊÓÇé¿öÓ¦ÓÃÓÚ¶Á»òÐ´Á´¡£ | |
 
 
 Óï·¨
 
-php://filter/read=convert.base64-encode/resource=[ÎÄ¼þÃû]<font style="color:rgb(33, 37, 41);">¶ÁÈ¡ÎÄ¼þÔ´Âë£¨Õë¶ÔphpÎÄ¼þÐèÒªbase64±àÂë£©</font>
+php://filter/read=convert.base64-encode/resource=[ÎÄ¼þÃû]¶ÁÈ¡ÎÄ¼þÔ´Âë£¨Õë¶ÔphpÎÄ¼þÐèÒªbase64±àÂë£©
 
 ## PHP
 ###  Ö´ÐÐÃüÁî  
@@ -286,7 +286,7 @@ __isset()                //µ±¶Ô²»¿É·ÃÎÊÊôÐÔµ÷ÓÃ isset() »ò empty() Ê±´¥·¢
 
 __unset()                //ÔÚ²»¿É·ÃÎÊµÄÊôÐÔÉÏÊ¹ÓÃunset()Ê±´¥·¢ µ±½Å±¾³¢ÊÔ½«¶ÔÏóµ÷ÓÃÎªº¯ÊýÊ±´¥·¢
 
-__invoke()               //µ±³¢ÊÔÒÔµ÷ÓÃº¯ÊýµÄ·½Ê½µ÷ÓÃÒ»¸ö¶ÔÏóÊ±´¥·¢---<font style="color:#585A5A;">µ±½Å±¾³¢ÊÔ½«¶ÔÏóµ÷ÓÃÎªº¯ÊýÊ±´¥·¢</font>
+__invoke()               //µ±³¢ÊÔÒÔµ÷ÓÃº¯ÊýµÄ·½Ê½µ÷ÓÃÒ»¸ö¶ÔÏóÊ±´¥·¢---µ±½Å±¾³¢ÊÔ½«¶ÔÏóµ÷ÓÃÎªº¯ÊýÊ±´¥·¢
 
 __sleep()                //Ö´ÐÐserialize()Ê±£¬ÏÈ»áµ÷ÓÃÕâ¸ö·½·¨
 
@@ -320,11 +320,11 @@ __toString()             //µ±·´ÐòÁÐ»¯ºóµÄ¶ÔÏó±»Êä³öÔÚÄ£°åÖÐµÄÊ±ºò£¨×ª»»³É×Ö·û´®µ
 ÎÄ¼þÉÏ´«Â©¶´ÊÇÖ¸ÓÉÓÚ³ÌÐòÔ±ÔÚ¶ÔÓÃ»§ÎÄ¼þÉÏ´«²¿·ÖµÄ¿ØÖÆ²»×ã»òÕß´¦ÀíÈ±ÏÝ£¬¶øµ¼ÖÂµÄÓÃ»§¿ÉÒÔÔ½¹ýÆä±¾ÉíÈ¨ÏÞÏò·þÎñÆ÷ÉÏÉÏ´«¿ÉÖ´ÐÐµÄ¶¯Ì¬½Å±¾ÎÄ¼þ¡£ÕâÀïÉÏ´«µÄÎÄ¼þ¿ÉÒÔÊÇÄ¾Âí£¬²¡¶¾£¬¶ñÒâ½Å±¾»òÕßWebShellµÈ¡£¡°ÎÄ¼þÉÏ´«¡±±¾ÉíÃ»ÓÐÎÊÌâ£¬ÓÐÎÊÌâµÄÊÇÎÄ¼þÉÏ´«ºó£¬·þÎñÆ÷ÔõÃ´´¦Àí¡¢½âÊÍÎÄ¼þ¡£Èç¹û·þÎñÆ÷µÄ´¦ÀíÂß¼­×öµÄ²»¹»°²È«£¬Ôò»áµ¼ÖÂÑÏÖØµÄºó¹û¡£
 
 ### Ô­Àí£º
-<font style="color:rgb(68, 68, 68);">ÔÚ WEB ÖÐ½øÐÐÎÄ¼þÉÏ´«µÄÔ­ÀíÊÇÍ¨¹ý½«±íµ¥ÉèÎª multipart/form-data£¬Í¬Ê±¼ÓÈëÎÄ¼þÓò£¬¶øºóÍ¨¹ý HTTP Ð­Òé½«ÎÄ¼þÄÚÈÝ·¢ËÍµ½·þÎñÆ÷£¬·þÎñÆ÷¶Ë¶ÁÈ¡Õâ¸ö·Ö¶Î (multipart) µÄÊý¾ÝÐÅÏ¢£¬²¢½«ÆäÖÐµÄÎÄ¼þÄÚÈÝÌáÈ¡³öÀ´²¢±£´æµÄ¡£Í¨³££¬ÔÚ½øÐÐÎÄ¼þ±£´æµÄÊ±ºò£¬·þÎñÆ÷¶Ë»á¶ÁÈ¡ÎÄ¼þµÄÔ­Ê¼ÎÄ¼þÃû£¬²¢´ÓÕâ¸öÔ­Ê¼ÎÄ¼þÃûÖÐµÃ³öÎÄ¼þµÄÀ©Õ¹Ãû£¬¶øºóËæ»úÎªÎÄ¼þÆðÒ»¸öÎÄ¼þÃû ( ÎªÁË·ÀÖ¹ÖØ¸´ )£¬²¢ÇÒ¼ÓÉÏÔ­Ê¼ÎÄ¼þµÄÀ©Õ¹ÃûÀ´±£´æµ½·þÎñÆ÷ÉÏ</font>
+ÔÚ WEB ÖÐ½øÐÐÎÄ¼þÉÏ´«µÄÔ­ÀíÊÇÍ¨¹ý½«±íµ¥ÉèÎª multipart/form-data£¬Í¬Ê±¼ÓÈëÎÄ¼þÓò£¬¶øºóÍ¨¹ý HTTP Ð­Òé½«ÎÄ¼þÄÚÈÝ·¢ËÍµ½·þÎñÆ÷£¬·þÎñÆ÷¶Ë¶ÁÈ¡Õâ¸ö·Ö¶Î (multipart) µÄÊý¾ÝÐÅÏ¢£¬²¢½«ÆäÖÐµÄÎÄ¼þÄÚÈÝÌáÈ¡³öÀ´²¢±£´æµÄ¡£Í¨³££¬ÔÚ½øÐÐÎÄ¼þ±£´æµÄÊ±ºò£¬·þÎñÆ÷¶Ë»á¶ÁÈ¡ÎÄ¼þµÄÔ­Ê¼ÎÄ¼þÃû£¬²¢´ÓÕâ¸öÔ­Ê¼ÎÄ¼þÃûÖÐµÃ³öÎÄ¼þµÄÀ©Õ¹Ãû£¬¶øºóËæ»úÎªÎÄ¼þÆðÒ»¸öÎÄ¼þÃû ( ÎªÁË·ÀÖ¹ÖØ¸´ )£¬²¢ÇÒ¼ÓÉÏÔ­Ê¼ÎÄ¼þµÄÀ©Õ¹ÃûÀ´±£´æµ½·þÎñÆ÷ÉÏ
 
-<font style="color:rgb(68, 68, 68);">³ÌÐòÔ±ÔÚ¿ª·¢ÈÎÒâÎÄ¼þÉÏ´«¹¦ÄÜÊ±£¬²¢Î´¿¼ÂÇÎÄ¼þ¸ñÊ½ºó×ºµÄºÏ·¨ÐÔÐ£Ñé»òÕßÊÇ·ñÖ»ÔÚÇ°¶ËÍ¨¹ýjs½øÐÐºó×º¼ìÑé¡£ÕâÊ±¹¥»÷Õß¿ÉÒÔÉÏ´«Ò»¸öÓëÍøÕ¾½Å±¾ÓïÑÔÏà¶ÔÓ¦µÄ¶ñÒâ´úÂë¶¯Ì¬½Å±¾£¬ÀýÈç(jsp¡¢asp¡¢php¡¢aspxÎÄ¼þºó×º)µ½·þÎñÆ÷ÉÏ£¬´Ó¶ø·ÃÎÊÕâÐ©¶ñÒâ½Å±¾ÖÐ°üº¬µÄ¶ñÒâ´úÂë£¬½øÐÐ¶¯Ì¬½âÎö×îÖÕ´ïµ½Ö´ÐÐ¶ñÒâ´úÂëµÄÐ§¹û£¬½øÒ»²½Ó°Ïì·þÎñÆ÷°²È«¡£</font>
+³ÌÐòÔ±ÔÚ¿ª·¢ÈÎÒâÎÄ¼þÉÏ´«¹¦ÄÜÊ±£¬²¢Î´¿¼ÂÇÎÄ¼þ¸ñÊ½ºó×ºµÄºÏ·¨ÐÔÐ£Ñé»òÕßÊÇ·ñÖ»ÔÚÇ°¶ËÍ¨¹ýjs½øÐÐºó×º¼ìÑé¡£ÕâÊ±¹¥»÷Õß¿ÉÒÔÉÏ´«Ò»¸öÓëÍøÕ¾½Å±¾ÓïÑÔÏà¶ÔÓ¦µÄ¶ñÒâ´úÂë¶¯Ì¬½Å±¾£¬ÀýÈç(jsp¡¢asp¡¢php¡¢aspxÎÄ¼þºó×º)µ½·þÎñÆ÷ÉÏ£¬´Ó¶ø·ÃÎÊÕâÐ©¶ñÒâ½Å±¾ÖÐ°üº¬µÄ¶ñÒâ´úÂë£¬½øÐÐ¶¯Ì¬½âÎö×îÖÕ´ïµ½Ö´ÐÐ¶ñÒâ´úÂëµÄÐ§¹û£¬½øÒ»²½Ó°Ïì·þÎñÆ÷°²È«¡£
 
-### <font style="color:rgb(68, 68, 68);">²úÉúÔ­Òò£º</font>
+### ²úÉúÔ­Òò£º
 ¶ÔÓÚÉÏ´«ÎÄ¼þµÄºó×ºÃû£¨À©Õ¹Ãû£©Ã»ÓÐ×ö½ÏÎªÑÏ¸ñµÄÏÞÖÆ
 
 ¶ÔÓÚÉÏ´«ÎÄ¼þµÄMIMETYPE(ÓÃÓÚÃèÊöÎÄ¼þµÄÀàÐÍµÄÒ»ÖÖ±íÊö·½·¨) Ã»ÓÐ×ö¼ì²é
@@ -334,9 +334,9 @@ __toString()             //µ±·´ÐòÁÐ»¯ºóµÄ¶ÔÏó±»Êä³öÔÚÄ£°åÖÐµÄÊ±ºò£¨×ª»»³É×Ö·û´®µ
 ¶ÔÓÚweb server¶ÔÓÚÉÏ´«ÎÄ¼þ»òÕßÖ¸¶¨Ä¿Â¼µÄÐÐÎªÃ»ÓÐ×öÏÞÖÆ
 
 ### Â©¶´ÀûÓÃ£º
-<font style="color:rgb(68, 68, 68);">¶à¼ûÓÚÍ¼Æ¬ÎÄ¼þÉÏ´«´¦</font>
+¶à¼ûÓÚÍ¼Æ¬ÎÄ¼þÉÏ´«´¦
 
-#### <font style="color:rgb(68, 68, 68);">Ò»¾ä»°Ä¾Âí£º</font>
+#### Ò»¾ä»°Ä¾Âí£º
 <?php eval ($_POST[0]);`
 
 ¸ü¶à¼û²Î¿¼ÎÄµµ£º[ÎÄ¼þÉÏ´«Â©¶´ (ÉÏ´«ÖªÊ¶µã¡¢ÌâÐÍ×Ü½á´óÈ«-upload°Ð³¡È«½â)_upload°Ð³¡ÌâÐÍ-CSDN²©¿Í](https://blog.csdn.net/qq_43390703/article/details/104858705)
@@ -376,7 +376,7 @@ __toString()             //µ±·´ÐòÁÐ»¯ºóµÄ¶ÔÏó±»Êä³öÔÚÄ£°åÖÐµÄÊ±ºò£¨×ª»»³É×Ö·û´®µ
 ¹¥»÷·½Ê½£ºÀûÓÃ PHP µÄÄÚÖÃ¹ýÂËÆ÷ÈÆ¹ý³£¹æ¼ì²é¡£  
 Àý×Ó£ºÍ¨¹ý php://filter/convert.base64-encode/resource=flag.php »ñÈ¡ÎÄ¼þµÄ Base64 ±àÂë
 
-## SSRF(<font style="color:rgb(77, 77, 77);">Server-Side Request Forgery ·þÎñÆ÷¶ËÇëÇóÎ±Ôì</font>)
+## SSRF(Server-Side Request Forgery ·þÎñÆ÷¶ËÇëÇóÎ±Ôì)
 ²Î¿¼ÎÄµµ£º
 
 [´ÓÒ»ÎÄÖÐÁË½âSSRFµÄ¸÷ÖÖÈÆ¹ý×ËÊÆ¼°¹¥»÷Ë¼Â·-ÌÚÑ¶ÔÆ¿ª·¢ÕßÉçÇø-ÌÚÑ¶ÔÆ](https://cloud.tencent.com/developer/article/2288231)
