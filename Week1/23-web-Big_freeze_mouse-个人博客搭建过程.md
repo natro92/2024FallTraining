@@ -256,14 +256,14 @@ deploy:
   type: git
   repo: https://github.com/icemouse094/icemouse094.github.io.git
   branch: main
-  token: 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
+  token:
 ```
 
 <font style="color:rgb(77, 77, 77);">其中 token 为 Github 的 personal access tokens获取方式如下图</font>
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/49235244/1730286061607-ca21af95-7ecd-4c4f-bae6-b0a3af843d0d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49235244/1730285999817-2522e276-7389-495e-916c-9a7abaadab89.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/49235244/1730388930492-982843a8-b4b4-423d-ab9a-124b29f51aeb.png)
 
 <font style="color:rgb(77, 77, 77);">部署到GitHub</font>
 
@@ -275,7 +275,7 @@ hexo g -d
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/49235244/1730286705380-26555cef-089c-451b-a153-25ff2e14c202.png)
 
- 
+<font style="color:rgb(77, 77, 77);"></font>
 
 
 
