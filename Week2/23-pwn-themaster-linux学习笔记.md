@@ -2,7 +2,7 @@
 
 在使用LInux时，我们并不是直接与底层系统交互的，而是通过一个名为“Shell”的中间程序来完成的。除此以外，Linux系统还提供了一个模拟终端的程序“Terminal”（终端模拟器）。
 
-终端本质上是对应着Linux上的/dev/tty设备，Linux的多用户登录就是通过不同的/dev/tty设备来完成的。Linux系统默认提供了6个纯命令行界面的“terminal”来让用户登录，通过`Ctrl + Alt + F1 ~ F6`来切换。如果想回到图形界面可以按下`Ctel + Alt + F7`。
+终端本质上是对应着Linux上的/dev/tty设备，Linux的多用户登录就是通过不同的/dev/tty设备来完成的。Linux系统默认提供了6个纯命令行界面的“terminal”来让用户登录，通过`Ctrl + Alt + F1 ~ F6`来切换。如果想回到图形界面可以按下`Ctrl + Alt + F7`。
 
 #### Shell(壳)
 
