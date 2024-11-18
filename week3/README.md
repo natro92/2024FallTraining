@@ -15,7 +15,11 @@
 然后六道题的完成截图和第六题的题解写在一个md文件里，交到GitHub上的week3文件夹
 ```
 ## misc
-复现newstar第三周
+复现newstar第三周<br />
+复现平台
+```
+https://ctf.xidian.edu.cn/training/
+```
 ## pwn
 ## re
 尝试以下作业，提交部分解题思路或题解
