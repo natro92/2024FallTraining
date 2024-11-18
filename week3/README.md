@@ -18,7 +18,9 @@
 复现newstar第三周<br />
 复现平台`https://ctf.xidian.edu.cn/training/`
 ## pwn
-了解linux
+掌握`c`,`python`的基础语法<br />
+理解部分汇编语言指令<br />
+了解一些`linux指令`
 ## re
 尝试以下作业，提交部分解题思路或题解
 reverse第三周作业.rar
