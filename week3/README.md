@@ -6,7 +6,7 @@
 ```
 1.使用docker(推荐)或者phpstudy搭建sqllabs靶场
 2.提交学习笔记
-3.在靶场或者去练习平台找题做，我需要看到对这个漏洞适当的深度提升
+3.在靶场或者去练习平台找题做并提交wp，我需要看到对这个漏洞适当的深度提升
 ```
 ## cry
 在`https://cryptohack.org`网站里注册，找到`challenges`，然后找到`Elliptic Curves`，完成`Elliptic Curves`的前6道题
