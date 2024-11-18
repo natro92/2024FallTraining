@@ -1,7 +1,7 @@
 # No.1
 把blog完善，提交的时候在首页`README.md`更新blog链接
 ## web
-这周的任务：自己好好学习sql注入<\br>
+这周的任务：自己好好学习sql注入<br />
 三个任务要求
 ```
 1.使用docker或者phpstudy搭建sqllabs靶场
