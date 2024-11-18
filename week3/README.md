@@ -18,6 +18,7 @@
 复现newstar第三周<br />
 复现平台`https://ctf.xidian.edu.cn/training/`
 ## pwn
+了解linux
 ## re
 尝试以下作业，提交部分解题思路或题解
 reverse第三周作业.rar
