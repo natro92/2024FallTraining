@@ -11,7 +11,8 @@
 ## cry
 在`https://cryptohack.org`网站里注册，找到`challenges`，然后找到`Elliptic Curves`，完成`Elliptic Curves`的前6道题
 ```
-每道题都贴上你写的计算代码和必要说明，不用太详细但要有。然后六道题的完成截图和第六题的题解写在一个md文件里，交到GitHub上的week3文件夹
+每道题都贴上你写的计算代码和必要说明，不用太详细但要有过程
+然后六道题的完成截图和第六题的题解写在一个md文件里，交到GitHub上的week3文件夹
 ```
 ## misc
 ## pwn
