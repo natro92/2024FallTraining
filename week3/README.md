@@ -18,3 +18,9 @@
 复现newstar第三周
 ## pwn
 ## re
+尝试以下作业，提交部分解题思路或题解
+reverse第三周作业.rar
+```
+链接：https://pan.baidu.com/s/1D_TsWVtrDwpfjpDV7JnprA?pwd=Orzy 
+提取码：Orzy
+``` 
