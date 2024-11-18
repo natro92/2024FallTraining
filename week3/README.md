@@ -16,10 +16,7 @@
 ```
 ## misc
 复现newstar第三周<br />
-复现平台
-```
-https://ctf.xidian.edu.cn/training/
-```
+复现平台`https://ctf.xidian.edu.cn/training/`
 ## pwn
 ## re
 尝试以下作业，提交部分解题思路或题解
