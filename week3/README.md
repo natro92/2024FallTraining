@@ -9,7 +9,7 @@
 3.在靶场或者去练习平台找题做，我需要看到对这个漏洞适当的深度提升
 ```
 ## cry
-在https://cryptohack.org网站里注册，找到challenges，然后找到Elliptic Curves，完成Elliptic Curves的前6道题
+在https://cryptohack.org 网站里注册，找到challenges，然后找到Elliptic Curves，完成Elliptic Curves的前6道题
 ```
 每道题都贴上你写的计算代码和必要说明，不用太详细但要有。然后六道题的完成截图和第六题的题解写在一个md文件里，交到GitHub上的week3文件夹
 ```
