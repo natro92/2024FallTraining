@@ -1,8 +1,8 @@
-### CRYPTOHACK-ELLIPTIC CURVES
-#### BACKGROUND
+# CRYPTOHACK-ELLIPTIC CURVES
+## BACKGROUND
 椭圆曲线在公钥密码学中的应用最早于1985年提出，在抵御了数十年的攻击后，从2005年左右开始被广泛使用。椭圆曲线密码学（ECC）是一种非对称密码协议，与RSA和Diffie-Hellman（DH）一样，安全性依赖于单向陷门函数的难度。但是ECC有一个优势就是其操作流程并不像RSA和DH的乘法、取数字幂一样在平时生活中经常出现。
 
-##### 椭圆曲线基本介绍
+### 椭圆曲线基本介绍
 椭圆曲线的**基本形式**如下
 
 ![image](https://cdn.nlark.com/yuque/__latex/6915579a96ee79cc9ea3b6509eeb4ab0.svg)
@@ -23,7 +23,7 @@
 
 ![image](https://cdn.nlark.com/yuque/__latex/42c448cfd43e644c4d37be0f08193cb1.svg)
 
-**定义：**椭圆曲线E是Weierstrass方程的解集
+**定义**：椭圆曲线E是Weierstrass方程的解集
 
 ![image](https://cdn.nlark.com/yuque/__latex/6915579a96ee79cc9ea3b6509eeb4ab0.svg)
 
@@ -46,55 +46,55 @@
 
 在ECC中，我们研究有限域![image](https://cdn.nlark.com/yuque/__latex/2289da1c86fb8362509135e96803bc02.svg)上的椭圆曲线。这意味着我们观察曲线对特征![image](https://cdn.nlark.com/yuque/__latex/d4cd21d60552e207f237e82def9029b6.svg)的模，椭圆曲线将不再是曲线，而是一组![image](https://cdn.nlark.com/yuque/__latex/5963837d99a8fcf1d9c5f7807a096f47.svg)坐标为![image](https://cdn.nlark.com/yuque/__latex/2289da1c86fb8362509135e96803bc02.svg)中整数的点。
 
-<h3 id="U9wYZ">椭圆曲线的离散对数问题</h3>
-给定一个椭圆曲线![image](https://cdn.nlark.com/yuque/__latex/321138a59e6eab0c97c21f05282a80a6.svg)，![image](https://cdn.nlark.com/yuque/__latex/321138a59e6eab0c97c21f05282a80a6.svg)上的一点![image](https://cdn.nlark.com/yuque/__latex/ffd1905f6d4d60accedfa6b91be93ea9.svg)经过了![image](https://cdn.nlark.com/yuque/__latex/56c1b0cb7a48ccf9520b0adb3c8cb2e8.svg)次点加法后得到$ T $，现已知![image](https://cdn.nlark.com/yuque/__latex/a9d8e7493ba3c1770ad1d78b01b8c21c.svg)，求出$ d $
+### 椭圆曲线的离散对数问题
+给定一个椭圆曲线![image](https://cdn.nlark.com/yuque/__latex/321138a59e6eab0c97c21f05282a80a6.svg)，![image](https://cdn.nlark.com/yuque/__latex/321138a59e6eab0c97c21f05282a80a6.svg)上的一点![image](https://cdn.nlark.com/yuque/__latex/ffd1905f6d4d60accedfa6b91be93ea9.svg)经过了![image](https://cdn.nlark.com/yuque/__latex/56c1b0cb7a48ccf9520b0adb3c8cb2e8.svg)次点加法后得到$T$，现已知![image](https://cdn.nlark.com/yuque/__latex/a9d8e7493ba3c1770ad1d78b01b8c21c.svg)，求出$d$
 
 这是椭圆曲线密码学主要解决的一个困难数学问题。
 
 > ps: 这段是目前个人的理解
 >
-> 其中在实际应用场景中，$ T $为公钥，$ P $为一个随机生成点（应该是？），$ d $为所需求的私钥
+> 其中在实际应用场景中，$T$为公钥，$P$为一个随机生成点（应该是？），$d$为所需求的私钥
 >
 
-<h3 id="I2o3K">Background Reading</h3>
-<h4 id="slK63">题目</h4>
-性质$ (d) $表明点加法是可交换的。flag是给具有交换运算的群起的名字。
+### Background Reading
+#### 题目
+性质$(d)$表明点加法是可交换的。flag是给具有交换运算的群起的名字。
 
-<h4 id="IfMmZ">flag</h4>
+#### flag
 crypto{Abelian}
 
-<h2 id="tBM2B">STARTER</h2>
-<h3 id="NX8me">Point Negation</h3>
-在密码学环境中应用椭圆曲线，需要研究在有限域$ \mathbb{F}_p $中具有坐标的椭圆曲线。
+## STARTER
+### Point Negation
+在密码学环境中应用椭圆曲线，需要研究在有限域$\mathbb{F}_p$中具有坐标的椭圆曲线。
 
-仍然可以认为椭圆曲线的形式为$ E:Y^{2}=X^3+aX+b $，并满足以下条件：$ a,b\in{\mathbb{F}_p},4a^3+27b^2\neq{O} $
+仍然可以认为椭圆曲线的形式为$E:Y^{2}=X^3+aX+b$，并满足以下条件：$a,b\in{\mathbb{F}_p},4a^3+27b^2\neq{O}$
 
 但不再将椭圆曲线看作一个几何对象，而是一组被如下定义的点
 
-$ E(\mathbb{F}_p)=\{(x,y):x,y\in{\mathbb{F}}_p~satisfying~~y^2=x^3+ax+b\}\cup{O} $
+$E(\mathbb{F}_p)=\{(x,y):x,y\in{\mathbb{F}}_p~satisfying~~y^2=x^3+ax+b\}\cup{O}$
 
-当把$ E $放入有限域后，椭圆曲线就不再是一条光滑曲线，而是一些不连续的点。
+当把$E$放入有限域后，椭圆曲线就不再是一条光滑曲线，而是一些不连续的点。
 
-![](https://gitee.com/Q1uJu/picture_bed/raw/master/image-20241118181201117.png)
+![image](https://gitee.com/Q1uJu/picture_bed/raw/master/image-20241118181201117.png)
 
 图来自[一个可绘制椭圆曲线的网站](https://andrea.corbellini.name/ecc/interactive/modk-add.html)
 
-<h4 id="aLGkh">题目</h4>
+#### 题目
 使用椭圆曲线
 
-$ E:Y^2=X^3+497X+1768~mod~9739 $
+$E:Y^2=X^3+497X+1768~mod~9739$
 
-使用该曲线和点$ P(8045,6936) $，找到点$ Q(x,y) $使得$ P+Q=O $
+使用该曲线和点$P(8045,6936)$，找到点$Q(x,y)$使得$P+Q=O$
 
 hint：在有限域中工作，需要正确处理负数。
 
-<h4 id="FRyzW">WriteUp</h4>
+#### WriteUp
 ![image](https://cdn.nlark.com/yuque/__latex/841f0d6ad341591d5fa39d5dca3cf354.svg)，可知![image](https://cdn.nlark.com/yuque/__latex/4ef7132d0df72d9e3db76f6391960a3d.svg)的![image](https://cdn.nlark.com/yuque/__latex/712ecf7894348e92d8779c3ee87eeeb0.svg)为8045，![image](https://cdn.nlark.com/yuque/__latex/bf98c0ddcbe9c1e535f767c78c3aa813.svg)为-6939，由提示处理负数，将-6939对9739取模得到2803。
 
-<h4 id="c8Q6K">flag</h4>
+#### flag
 crypto{8045,2803}
 
-<h3 id="gamCP">Point Addition</h3>
+### Point Addition
 在椭圆曲线密码学的使用过程中，经常需要用到点加法，本题考查的就是点加法。
 
 题目给出了如下实现算法
@@ -122,7 +122,7 @@ crypto{8045,2803}
 > (h) ![image](https://cdn.nlark.com/yuque/__latex/1423457c509f211613a5bceedcb05ae7.svg)
 >
 
-<h4 id="GMt4d">题目</h4>
+#### 题目
 使用以下椭圆曲线和素数：
 
 ![image](https://cdn.nlark.com/yuque/__latex/82b46db47da5d259a75f96ed120acc9b.svg)
@@ -135,10 +135,10 @@ crypto{8045,2803}
 > 在计算完![image](https://cdn.nlark.com/yuque/__latex/55fc237afbe535f7d8434985b848a6a7.svg)后，将坐标代入曲线以确保点![image](https://cdn.nlark.com/yuque/__latex/55fc237afbe535f7d8434985b848a6a7.svg)在![image](https://cdn.nlark.com/yuque/__latex/59496f18e8d7960318929ac8ac17abfa.svg)上
 >
 
-<h4 id="vcK2a">WriteUp</h4>
+#### WriteUp
 根据所给出的算法流程构建`addition(p1: Point, p2: Point, a, b)`函数，并测试算法正确性之后计算点加和，最后确定![image](https://cdn.nlark.com/yuque/__latex/55fc237afbe535f7d8434985b848a6a7.svg)在![image](https://cdn.nlark.com/yuque/__latex/59496f18e8d7960318929ac8ac17abfa.svg)上。
 
-<h4 id="xAntA">EXP&flag</h4>
+#### EXP&flag
 ```python
 from sage.all import GF
 
@@ -182,7 +182,7 @@ print('crypto{'+str(S.x)+','+str(S.y)+'}')
 # crypto{4215,2162}
 ```
 
-<h3 id="R3avm">Scalar Multiplication</h3>
+### Scalar Multiplication
 两点的标量乘法由重复加法定义：![image](https://cdn.nlark.com/yuque/__latex/21ef8cf78c81eaffc73a65e792f16a93.svg)
 
 本题也给出了如下实现算法
@@ -201,7 +201,7 @@ print('crypto{'+str(S.x)+','+str(S.y)+'}')
 > 6. 返回点![image](https://cdn.nlark.com/yuque/__latex/58f174354f8b28abc98969927d94c7f1.svg)
 >
 
-<h4 id="dIZ9T">题目</h4>
+#### 题目
 使用以下椭圆曲线和素数：
 
 ![image](https://cdn.nlark.com/yuque/__latex/82b46db47da5d259a75f96ed120acc9b.svg)
@@ -216,10 +216,10 @@ print('crypto{'+str(S.x)+','+str(S.y)+'}')
 > 在计算完![image](https://cdn.nlark.com/yuque/__latex/4ef7132d0df72d9e3db76f6391960a3d.svg)后，将坐标代入曲线以确保点![image](https://cdn.nlark.com/yuque/__latex/4ef7132d0df72d9e3db76f6391960a3d.svg)在![image](https://cdn.nlark.com/yuque/__latex/59496f18e8d7960318929ac8ac17abfa.svg)上
 >
 
-<h4 id="UFGe2">WriteUp</h4>
+#### WriteUp
 同上题，根据所给出的算法流程构建`Scalar_Multiplication(p: Point, n, a, b)`函数，并测试算法正确性之后计算点![image](https://cdn.nlark.com/yuque/__latex/4ef7132d0df72d9e3db76f6391960a3d.svg)，最后确定![image](https://cdn.nlark.com/yuque/__latex/4ef7132d0df72d9e3db76f6391960a3d.svg)在![image](https://cdn.nlark.com/yuque/__latex/59496f18e8d7960318929ac8ac17abfa.svg)上。
 
-<h4 id="UTp9I">EXP&flag</h4>
+#### EXP&flag
 ```python
 from sage.all import GF
 
@@ -269,7 +269,7 @@ print('crypto{' + str(Q.x) + ',' + str(Q.y) + '}')
 # crypto{9467,2742}
 ```
 
-<h3 id="gcmvG">Curves and Logs</h3>
+### Curves and Logs
 椭圆曲线离散对数问题（ECDLP）是找到一个整数![image](https://cdn.nlark.com/yuque/__latex/df378375e7693bdcf9535661c023c02e.svg)，使得![image](https://cdn.nlark.com/yuque/__latex/c93d4c9fb8f43b5f75e185d89f1aa7eb.svg)的问题，也是椭圆曲线密码学中一个核心问题。
 
 Alice和Bob正在交谈，他们想创建一个共享密钥，这样他们就可以开始用一些对称的加密协议加密他们的消息。Alice和Bob不信任他们的连接，所以他们需要一种方法来创建其他人无法复制的密钥。
@@ -290,7 +290,7 @@ Alice和Bob正在交谈，他们想创建一个共享密钥，这样他们就可
 + 由标量乘法的可结合性，![image](https://cdn.nlark.com/yuque/__latex/27001ad7c2b2618a1c40c88560666d28.svg)
 + Alice和Bob能够使用![image](https://cdn.nlark.com/yuque/__latex/55fc237afbe535f7d8434985b848a6a7.svg)作为他们的共享秘密
 
-<h4 id="kMYFO">题目</h4>
+#### 题目
 使用曲线、素数和生成器：
 
 ![image](https://cdn.nlark.com/yuque/__latex/632e6dc50784914133d53141515e8844.svg)
@@ -302,14 +302,14 @@ Alice和Bob正在交谈，他们想创建一个共享密钥，这样他们就可
 > 这条曲线并非不是加密安全的！！本题选择了一个小素数，以便在学习时保持一切快速。加密安全曲线使用比特大小≈256的素数
 >
 
-<h4 id="HNONX">WriteUp</h4>
+#### WriteUp
 和DH类似，椭圆曲线DH密钥交换过程如下公式
 
 ![image](https://cdn.nlark.com/yuque/__latex/07001b9c28705e306c0717b18c021f9d.svg)
 
 题目已经给出![image](https://cdn.nlark.com/yuque/__latex/1d6b573c5cee427fa483de482fce0e09.svg)和![image](https://cdn.nlark.com/yuque/__latex/55edb6f83635d53d5475e93b605120d9.svg)，直接用前面的标量乘法函数求解![image](https://cdn.nlark.com/yuque/__latex/1d7af5368c17853932a09a6ba891b9e4.svg)即可，解得![image](https://cdn.nlark.com/yuque/__latex/55fc237afbe535f7d8434985b848a6a7.svg)后将![image](https://cdn.nlark.com/yuque/__latex/ff19ce66179d022e787690c98ab7fd63.svg)转换为字符串并用SHA1生成十六进制摘要得到flag。
 
-<h4 id="e5o1C">EXP&flag</h4>
+#### EXP&flag
 ```python
 from sage.all import GF
 import hashlib
@@ -357,7 +357,7 @@ print('crypto{' + sha1_hash + '}')
 # crypto{80e5212754a824d3a4aed185ace4f9cac0f908bf}
 ```
 
-<h3 id="LEQJB">Efficient Exchange</h3>
+### Efficient Exchange
 Alice和Bob正在研究椭圆曲线离散对数问题，并思考他们发送的数据。
 
 他们希望尽可能保持数据传输的效率，并意识到不需要同时发送公钥的![image](https://cdn.nlark.com/yuque/__latex/712ecf7894348e92d8779c3ee87eeeb0.svg)和![image](https://cdn.nlark.com/yuque/__latex/bf98c0ddcbe9c1e535f767c78c3aa813.svg)坐标。
@@ -366,7 +366,7 @@ Alice和Bob正在研究椭圆曲线离散对数问题，并思考他们发送的
 
 事实上，给定他们接收到的![image](https://cdn.nlark.com/yuque/__latex/712ecf7894348e92d8779c3ee87eeeb0.svg)值中允许的![image](https://cdn.nlark.com/yuque/__latex/bf98c0ddcbe9c1e535f767c78c3aa813.svg)值，他们共享秘密的![image](https://cdn.nlark.com/yuque/__latex/712ecf7894348e92d8779c3ee87eeeb0.svg)坐标将是相同的。
 
-<h4 id="ja23X">题目</h4>
+#### 题目
 使用曲线、素数和生成器：
 
 ![image](https://cdn.nlark.com/yuque/__latex/632e6dc50784914133d53141515e8844.svg)
@@ -381,10 +381,10 @@ Alice和Bob正在研究椭圆曲线离散对数问题，并思考他们发送的
 > 您可以通过只发送一个位来指定公共![image](https://cdn.nlark.com/yuque/__latex/bf98c0ddcbe9c1e535f767c78c3aa813.svg)坐标取了两个可能值中的哪一个。试着想想如何做到这一点。这两个![image](https://cdn.nlark.com/yuque/__latex/bf98c0ddcbe9c1e535f767c78c3aa813.svg)值是如何相互关联的？
 >
 
-<h4 id="WoUW3">WriteUp</h4>
+#### WriteUp
 由题前背景介绍中可以知道，在曲线参数一致，即在同一条椭圆曲线上，给定![image](https://cdn.nlark.com/yuque/__latex/712ecf7894348e92d8779c3ee87eeeb0.svg)，![image](https://cdn.nlark.com/yuque/__latex/bf98c0ddcbe9c1e535f767c78c3aa813.svg)值只有两个可能；题目中已经给出![image](https://cdn.nlark.com/yuque/__latex/732d87b610d5fcf5b6f93afcb6564dc4.svg)，可以借助`sqrt_mod`函数来求解两个![image](https://cdn.nlark.com/yuque/__latex/bf98c0ddcbe9c1e535f767c78c3aa813.svg)值，并可测试两个![image](https://cdn.nlark.com/yuque/__latex/bf98c0ddcbe9c1e535f767c78c3aa813.svg)值取的不同点标量乘法求得的点的![image](https://cdn.nlark.com/yuque/__latex/712ecf7894348e92d8779c3ee87eeeb0.svg)相同。求得![image](https://cdn.nlark.com/yuque/__latex/712ecf7894348e92d8779c3ee87eeeb0.svg)值后用题目给出的`decrypt`函数求解得到flag。
 
-<h4 id="yn2zY">EXP&flag</h4>
+#### EXP&flag
 ```python
 from sage.all import GF
 from sympy.ntheory import sqrt_mod
@@ -472,6 +472,6 @@ print(decrypt_flag(shared_secret, iv, ciphertext))
 # crypto{3ff1c1ent_k3y_3xch4ng3}
 ```
 
-<h2 id="PUg0i">附 解题截图</h2>
-![](https://gitee.com/Q1uJu/picture_bed/raw/master/image-20241118173231996.png)
+## 附 解题截图
+![解题截图](https://gitee.com/Q1uJu/picture_bed/raw/master/image-20241118173231996.png)
 
