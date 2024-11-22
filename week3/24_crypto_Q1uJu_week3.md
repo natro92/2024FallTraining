@@ -47,7 +47,7 @@
 在ECC中，我们研究有限域![image](https://cdn.nlark.com/yuque/__latex/2289da1c86fb8362509135e96803bc02.svg)上的椭圆曲线。这意味着我们观察曲线对特征![image](https://cdn.nlark.com/yuque/__latex/d4cd21d60552e207f237e82def9029b6.svg)的模，椭圆曲线将不再是曲线，而是一组![image](https://cdn.nlark.com/yuque/__latex/5963837d99a8fcf1d9c5f7807a096f47.svg)坐标为![image](https://cdn.nlark.com/yuque/__latex/2289da1c86fb8362509135e96803bc02.svg)中整数的点。
 
 ### 椭圆曲线的离散对数问题
-给定一个椭圆曲线![image](https://cdn.nlark.com/yuque/__latex/321138a59e6eab0c97c21f05282a80a6.svg)，![image](https://cdn.nlark.com/yuque/__latex/321138a59e6eab0c97c21f05282a80a6.svg)上的一点![image](https://cdn.nlark.com/yuque/__latex/ffd1905f6d4d60accedfa6b91be93ea9.svg)经过了![image](https://cdn.nlark.com/yuque/__latex/56c1b0cb7a48ccf9520b0adb3c8cb2e8.svg)次点加法后得到$T$，现已知![image](https://cdn.nlark.com/yuque/__latex/a9d8e7493ba3c1770ad1d78b01b8c21c.svg)，求出$d$
+给定一个椭圆曲线![image](https://cdn.nlark.com/yuque/__latex/321138a59e6eab0c97c21f05282a80a6.svg)，![image](https://cdn.nlark.com/yuque/__latex/321138a59e6eab0c97c21f05282a80a6.svg)上的一点![image](https://cdn.nlark.com/yuque/__latex/ffd1905f6d4d60accedfa6b91be93ea9.svg)经过了![image](https://cdn.nlark.com/yuque/__latex/56c1b0cb7a48ccf9520b0adb3c8cb2e8.svg)次点加法后得到$ T $，现已知![image](https://cdn.nlark.com/yuque/__latex/a9d8e7493ba3c1770ad1d78b01b8c21c.svg)，求出$ d $
 
 这是椭圆曲线密码学主要解决的一个困难数学问题。
 
