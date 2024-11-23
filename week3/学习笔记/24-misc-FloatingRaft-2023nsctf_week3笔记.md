@@ -22,7 +22,7 @@ AES，中文名叫高级加密标准<font style="color:rgb(51, 51, 51);">（Adva
 
 **<font style="color:rgb(51, 51, 51);">矩阵式二维码</font>**
 
-<font style="color:rgb(51, 51, 51);">矩阵式二维条码（又称棋盘式二维条码），是在一个矩形空间通过黑、白像素在矩阵中的不同分布进行编码。在矩阵相应元素位置上，用点（方点、圆点或其他形状）的出现表示二进制“1”，点的不出现表示二进制的“0”，点的排列组合确定了矩阵式二维条码所代表的意义。矩阵式二维条码是建立在</font>[<font style="color:rgb(51, 51, 51);">计算机图像处理</font>](https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/5687124?fromModule=lemma_inlink)<font style="color:rgb(51, 51, 51);">技术、组合编码原理等基础上的一种新型图形符号自动识读处理码制。具有代表性的矩阵式二维条码有：Code One、MaxiCode、QR Code、Data Matrix、Han Xin Code、Grid Matrix等。</font><sup><font style="color:rgb(51, 102, 204);"></font></sup>
+<font style="color:rgb(51, 51, 51);">矩阵式二维条码（又称棋盘式二维条码），是在一个矩形空间通过黑、白像素在矩阵中的不同分布进行编码。在矩阵相应元素位置上，用点（方点、圆点或其他形状）的出现表示二进制“1”，点的不出现表示二进制的“0”，点的排列组合确定了矩阵式二维条码所代表的意义。矩阵式二维条码是建立在计算机图像处理技术、组合编码原理等基础上的一种新型图形符号自动识读处理码制。具有代表性的矩阵式二维条码有：Code One、MaxiCode、QR Code、Data Matrix、Han Xin Code、Grid Matrix等。</font><sup><font style="color:rgb(51, 102, 204);"></font></sup>
 
 ![](https://cdn.nlark.com/yuque/0/2024/jpeg/49267415/1732372736844-0938ebae-6a17-49a8-bb39-206dd8f39980.jpeg)<font style="color:rgb(85, 85, 85);"></font>
 
