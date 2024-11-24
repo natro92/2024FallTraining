@@ -1,5 +1,5 @@
 ---
-title: sql靶场靶场搭建和刷题
+title: sql靶场搭建和刷题
 date: 2024-11-19 12:27:52
 comments: true
 description: 学习记录
@@ -10,7 +10,7 @@ tags:
 - docker
 - phpstudy
 ---
-# sql靶场靶场搭建和刷题
+# sql靶场搭建和刷题
 
 sql-labs靶场的搭建可以选择使用docker或者phpstudy，但是既然是大人了，那么两个我都要(
 
