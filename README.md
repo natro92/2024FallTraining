@@ -3,10 +3,10 @@
 | **cry-硫酸盐** | **8** | **7** |  |  |  |  |  |  |  |
 | **cry-Monday** | **9** | **9** |  |  |  |  |  |  | **mondaying.cn** |
 | **cry-Q1uJu** | **9** | **8** |  |  |  |  |  |  |  |
-| **web-Dre4m1nd** | **7** | **9.5** |  |  |  |  |  |  |  |
-| **web-flyfish** | **6** | **6** |  |  |  |  |  |  |  |
+| **web-Dre4m1nd** | **7** | **9.5** |  |  |  |  |  |  | **dre4m1nd.github.io** |
+| **web-flyfish** | **6** | **6** |  |  |  |  |  |  | **flyfish567.github.io** |
 | **web-RTXON** | **7** | **X** |  |  |  |  |  |  |  |
-| **web-Big_freeze_mouse** | **8** | **9** |  |  |  |  |  |  |  |
+| **web-Big_freeze_mouse** | **8** | **9** |  |  |  |  |  |  | **icemouse094.github.io** |
 | **web-chrizsty** | **6** | **7** |  |  |  |  |  |  |  |
 | **web-Fischl0527** | **8** | **8** |  |  |  |  |  |  |  |
 | **web-留白** | **9.5** | **9** |  |  |  |  |  |  | **liubai.me** |
