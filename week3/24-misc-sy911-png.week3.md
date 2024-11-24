@@ -30,7 +30,7 @@ flag{U_W1n!!_7he_g@m4}
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/50077463/1732427701277-64d60d2a-5347-4004-97cf-1fc7de2db60a.png)
 
-<h2 id="KXC5R">**OSINT-MASTER**</h2>
+<h2 id="KXC5R">OSINT-MASTER</h2>
 打开图片能看到机翼上编号B-2419
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/50077463/1732420349748-3e32fb70-d83c-4931-80a3-91c628109ad5.png)
