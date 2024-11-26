@@ -5,7 +5,7 @@
 | **cry-Q1uJu** | **9** | **8** |  **8** |  |  |  |  |  |
 | **web-Dre4m1nd** | **7** | **9.5** | **9** |  |  |  |  | **dre4m1nd.github.io** |
 | **web-flyfish** | **6** | **6** | **7** |  |  |  |  | **flyfish567.github.io** |
-| **web-000** | **8** | **8** |  |  |  |  |  |  |
+| **web-000** | **8** | **8** |  |  |  |  |  | **blog000.cn** |
 | **web-Big_freeze_mouse** | **8** | **9** | **9** |  |  |  |  | **icemouse094.github.io** |
 | **web-chrizsty** | **6** | **7** | **7** |  |  |  |  | **blog.chrizsty.cn** |
 | **web-Fischl0527** | **8** | **8** | **8** |  |  |  |  |  |
