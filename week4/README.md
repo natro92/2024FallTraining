@@ -27,4 +27,6 @@
 basectf week2-week4 wp
 ```
 ## re
-
+```
+复现第一周喝第二周newstar题目，写笔记和自己的思考，把wp和笔记分开
+```
