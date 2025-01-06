@@ -17,13 +17,13 @@ tags:
 ---
 >参考
 >
-><https://www.bilibili.com/video/BV16D4y167TT/?spm_id_from=333.880.my_history.page.click>
+> <https://www.bilibili.com/video/BV16D4y167TT/?spm_id_from=333.880.my_history.page.click>
 >
-><https://www.runoob.com/sql/sql-tutorial.html>
+> <https://www.runoob.com/sql/sql-tutorial.html>
 >
 > <https://www.bilibili.com/video/BV1aS4y1W78p?p=2&vd_source=06887b49ed0996e8a27c4d84f89315d3>
 >
->https://blog.csdn.net/qq_55316925/article/details/129147618
+> <https://blog.csdn.net/qq_55316925/article/details/129147618>
 ---
 
 在web方向网络安全的渗透学习中，我发现如果仅仅只是为了做题的需要才去学习碎片的、部分的sql和php语言知识，是不成体系的，对之后的深入学习会造成阻碍
@@ -817,3 +817,1135 @@ false_value：当条件为假时返回的值
 ---
 
 先到这里，sql注入的基础内容算是学完了
+
+## PHP语言学习
+
+PHP（Hypertext Preprocessor）是一种开源的、服务器端的脚本语言，特别适用于Web开发并可以嵌入HTML中。它最初由Rasmus Lerdorf在1994年创建，随着时间的发展，PHP已经成为一种功能强大的编程语言，支持面向对象编程和多种数据库连接
+
+### 基本背景知识了解
+
+#### (1)静态网站访问流程(比如个人博客)
+
+在这里只对现代日常家用电脑的访问过程进行分析
+
+用户在个人电脑PC上打开浏览器软件，网址栏输入某个静态网站的URL(俗称网址，统一资源定位，是互联网上的绝对路径)，访问请求实际上不会直接到达目标服务器上，而是先经过DNS服务器解析
+
+先是去访问本地DNS即hosts文件，如果是本地的静态网站，该文件DNS解析为本地ip(如127.0.0.1)，会从本地电脑找对应静态网站的服务器资源文件
+
+如果找不到，就会去访问外部的网络DNS，然后DNS解析出ip地址返回给个人电脑，浏览器通过ip找到服务器位置
+
+之后通过端口去访问服务器的服务软件(如Apache),服务软件会看你端口后面要访问的URI(统一资源标识，目标服务器机器上相对某个文件夹的相对路径，如index.html)，从服务器存储的网站资源搜索该文件并读取内容，Apache返回给个人电脑浏览器
+
+浏览器会经过解析，变成具象的画面呈现给用户
+
+![QQ截图20241201142824.png](https://www.helloimg.com/i/2024/12/01/674c011394294.png)
+
+#### (2)动态网站访问流程(比如日常使用的b站等强交互网站)
+
+比静态多了服务端解析和数据库
+
+大体流程跟静态差不多的，有几个差别
+
+URL里面的URI通常有php文件如index.php
+
+服务器端需要调用php引擎去解析php文件变成HTML内容给Apache，同时调用数据库(另一个数据库服务器)进行数据处理，处理好再返回给个人电脑
+
+![QQ截图20241201151149.png](https://www.helloimg.com/i/2024/12/01/674c0b145d4c8.png)
+
+所以php语言在动态网站的后端中用的是最广泛的
+
+### 1.使用phpstudy写个Hello, PHPStudy!测试环境
+
+打开phpstudy的根目录下的WWW文件，创建一个新的文件夹来放学习测试用的php文件，在这里面我们可以创建一个比如名为index.php的文件
+
+在里面写入
+
+```php
+<?php
+// 这是一个简单的 PHP 脚本示例
+echo "Hello, PHPStudy!";
+?>
+```
+
+打开phpstudy点击网站，创建一个新网站，域名随便，端口跟前几个网站不一样就可以，根目录选择我们刚刚在WWW下面创建的新文件夹
+
+回到主页重启Apache和Mysql
+
+然后点击你网站右边的管理，选择打开网站，如果自动打开浏览器显示`Hello, PHPStudy!`,说明基本环境没问题
+
+### 2.php代码标记
+
+由于写php的过程中经常有不同类型的语言嵌入，所以为了区分出php代码部分，我们需要进行一些特殊的标记以作区分
+
+在历史发展中，有这几种标记
+
+1.ASP标记(弃用)
+
+ASP 风格的标记类似于 Microsoft 的 Active Server Pages 使用的标记。这种标记形式已经被废弃，并且从 PHP 7.0.0 开始不再支持。
+
+```
+<%
+    // PHP 代码放在这里
+    echo "Hello, World!";
+%>
+```
+
+2.短标记(弃用)
+
+短标记是一种更简短的标记形式，但它们的使用取决于 php.ini 配置文件中的 short_open_tag 指令是否开启。默认情况下，在 PHP 5.4.0 及以上版本中，这个设置是开启的
+
+```
+<?
+    // PHP 代码放在这里
+    echo "Hello, World!";
+?>
+```
+
+3.脚本标记
+
+```
+<script language="php">
+
+echo "Hello, World!";
+
+</script>
+```
+
+4.标准标记(目前主流)
+
+```
+<?php
+    // PHP 代码放在这里
+    echo "Hello, World!";
+?>
+```
+
+### 3.php注释和分隔符
+
+行注释:`//`,`#`
+
+块注释:`/* 代码 */`
+
+分隔符:`;`
+
+### 4.php的变量
+
+1.基本规则了解
+
+PHP 没有声明变量的命令，变量在你第一次赋值给它的时候被创建
+
+php中的所有变量前面要使用`$`符号
+
+PHP 是一门弱类型语言，不必向 PHP 声明该变量的数据类型，PHP 会根据变量的值，自动把变量转换为正确的数据类型(简直就是c/c++玩家的福音)
+
+使用`echo`可以输出变量的值，输出多个内容用`,`分隔
+
+不想要变量可以使用`unset(变量名删除)`，举例
+
+```
+<?php
+
+    $a=1;
+    echo $a;
+    unset($a);
+    echo $a;
+
+?>
+
+第一次输出1，第二次输出失败，提示找不到该变量
+
+2.变量命名规则
+
+变量以 $ 符号开始，后面跟着变量的名称
+
+变量名必须以字母或者下划线字符开始
+
+变量名只能包含字母、数字以及下划线（A-z、0-9 和 _ ）
+
+变量名不能包含空格
+
+变量名是区分大小写的（$y 和 $Y 是两个不同的变量）
+
+3.预定义变量
+
+PHP 中的预定义变量（也称为超级全局变量）是内置的特殊变量(都是数组)，它们在脚本的所有作用域中都可用。这些变量由 PHP 自动创建，用于存储各种信息，如请求数据、环境信息、服务器信息等。以下是 PHP 中常见的预定义变量：
+
+(1)`$_GET`：
+   - 包含通过 URL 参数传递给当前脚本的变量（即查询字符串）。它是数组形式，键为参数名，值为参数值。
+   ```php
+   // 如果 URL 是 http://example.com/index.php?name=John
+   echo $_GET['name']; // 输出: John
+   ```
+
+(2)`$_POST`：
+   - 用于收集 HTML 表单中的 POST 方法提交的数据。它也是一个数组。
+   ```php
+   if ($_SERVER["REQUEST_METHOD"] == "POST") {
+       // 处理表单数据
+       $name = $_POST['name'];
+   }
+   ```
+
+(3)`$_REQUEST`：
+   - 包含 `$_GET`、`$_POST` 和 `$_COOKIE` 的内容。默认情况下，`$_GET` 和 `$_POST` 的优先级高于 `$_COOKIE`，但可以通过修改 php.ini 来改变这一点。
+
+(4)`$_FILES`：
+   - 用于处理文件上传。它是一个多维数组，包含了关于每个上传文件的信息，如名称、类型、大小、临时路径等。
+   ```php
+   if ($_FILES["file"]["error"] == UPLOAD_ERR_OK) {
+       // 文件上传成功，可以进一步处理
+   }
+   ```
+
+(5)`$_COOKIE`：
+   - 存储通过 HTTP Cookies 提交到脚本的数据。它也是数组形式。
+   ```php
+   setcookie("user", "John", time() + (86400 * 30), "/"); // 设置一个 cookie
+   echo $_COOKIE['user']; // 获取并输出 cookie 值
+   ```
+
+(6)`$_SESSION`：
+   - 用于存储会话信息。会话变量在页面之间保持用户数据。使用前需要调用 `session_start()` 函数来启动会话。
+   ```php
+   session_start();
+   $_SESSION['username'] = 'John'; // 设置会话变量
+   echo $_SESSION['username']; // 输出会话变量
+   ```
+
+(7)`$_SERVER`：
+   - 包含了服务器和执行环境的信息。这是一个关联数组，包含了诸如头信息（header）、路径（path）、脚本位置等信息。
+   ```php
+   echo $_SERVER['PHP_SELF']; // 当前正在执行脚本的文件名
+   echo $_SERVER['HTTP_HOST']; // 当前请求的主机头
+   echo $_SERVER['REMOTE_ADDR']; // 客户端 IP 地址
+   ```
+
+(8)`$GLOBALS`：
+   - 包含了所有全局范围内的变量。这是一个关联数组，其中键是变量名，值是变量的内容。任何全局范围内的变量都可以通过 `$GLOBALS` 访问。
+   ```php
+   $x = 10;
+   function myTest() {
+       echo $GLOBALS['x'];
+   }
+   myTest(); // 输出: 10
+   ```
+
+(9)`$_ENV`：
+   - 包含了运行环境中设置的环境变量。它的可用性取决于 PHP 配置和服务器环境。
+
+超全局变量的作用域：所有上述提到的预定义变量都是“超全局”的，意味着它们可以在函数或方法内部直接访问，而无需使用 `global` 关键字。
+
+4.可变变量
+
+在 PHP 中，可变变量（variable variables）是一种特殊的变量类型，它允许你通过一个变量的值来动态地访问另一个变量。换句话说，可变变量的名字是存储在另一个变量中的。这种特性可以让你创建更加灵活和动态的代码结构，但也增加了代码的复杂性和潜在的安全风险。
+
+(1)基本语法
+
+要使用可变变量，只需在变量名前加上额外的 `$` 符号。例如：
+
+```php
+$var_name = "hello";
+$$var_name = "world"; // 这等同于 $hello = "world";
+
+echo $hello; // 输出: world
+```
+
+在这个例子中，`$var_name` 的值是 `"hello"`，因此 `$$var_name` 实际上引用的是名为 `$hello` 的变量。当我们将 `"world"` 赋值给 `$$var_name` 时，实际上是将 `"world"` 赋值给了 `$hello`。
+
+(2)可变变量与数组
+
+可变变量也可以与数组结合使用。例如：
+
+```php
+$array = array("one", "two", "three");
+$name = "array";
+echo $$name[1]; // 输出: two
+```
+
+在这个例子中，`$$name` 实际上引用的是 `$array`，而 `$$name[1]` 则相当于 `$array[1]`，输出 `"two"`。
+
+(3)可变变量与函数返回值
+
+你可以将函数的返回值用作可变变量的名字。例如：
+
+```php
+function getVarName() {
+    return "greeting";
+}
+
+$$getVarName() = "Hello, World!";
+echo $greeting; // 输出: Hello, World!
+```
+
+5.变量传值
+
+在 PHP 中，变量传值是指将一个变量的值传递给另一个变量、函数参数或返回值。PHP 支持两种主要的传值方式：按值传递和按引用传递。了解这两种方式的区别对于编写高效且无错误的代码非常重要。
+
+(1)按值传递 (Pass by Value)
+
+当变量是按值传递时，实际上是创建了原始变量的一个副本，并将这个副本传递给接收方（例如函数参数）。这意味着对副本所做的任何修改都不会影响原始变量。
+
+示例：
+
+```php
+function addOne($num) {
+    $num = $num + 1;
+}
+
+$original = 5;
+addOne($original);
+echo $original; // 输出: 5
+```
+
+在这个例子中，`$original` 的值是 `5`。当我们调用 `addOne($original)` 时，`$original` 的值被复制并传递给函数参数 `$num`。在函数内部对 `$num` 进行的操作不会影响到 `$original`，因此最终输出仍然是 `5`。
+
+(2)按引用传递 (Pass by Reference)
+
+当变量是按引用传递时，传递的是变量本身的引用（即内存地址），而不是它的值。这意味着对传递的变量所做的任何修改都会反映在原始变量上。
+
+示例：
+
+```php
+function addOne(&$num) {
+    $num = $num + 1;
+}
+
+$original = 5;
+addOne($original);
+echo $original; // 输出: 6
+```
+
+在这个例子中，通过在函数参数前加上 `&` 符号，我们告诉 PHP 按引用传递 `$original`。因此，在函数内部对 `$num` 的修改会影响到 `$original`，最终输出为 `6`。
+
+(3)返回值
+
+函数可以返回一个值，这个值可以被赋值给另一个变量。返回值可以是按值返回，也可以是按引用返回。
+
+(4)按值返回：
+
+```php
+function getNumber() {
+    return 10;
+}
+
+$number = getNumber();
+echo $number; // 输出: 10
+```
+
+(5)按引用返回：
+
+要让函数按引用返回值，可以在 `return` 关键字前加上 `&`，并且在调用函数时也要使用 `&` 来获取引用。
+
+```php
+function &getArray() {
+    static $arr = array();
+    return $arr;
+}
+
+$arrayRef = &getArray();
+$arrayRef[] = "apple";
+echo count($arrayRef); // 输出: 1
+```
+
+(6)数组和对象的传值
+
+数组：在 PHP 5 及以上版本中，默认情况下数组是按值传递的，但在某些情况下（如函数内部修改数组）可能会更高效地按引用传递。
+  
+对象：从 PHP 5 开始，对象总是按引用传递。这意味着当你将一个对象赋值给另一个变量或传递给函数时，实际上传递的是对象的引用，而不是对象的副本。因此，对对象属性的任何修改都会反映在所有引用该对象的地方。
+
+示例：
+
+```php
+class MyClass {
+    public $property = 'default';
+}
+
+function modifyObject(MyClass $obj) {
+    $obj->property = 'modified';
+}
+
+$myObject = new MyClass();
+modifyObject($myObject);
+echo $myObject->property; // 输出: modified
+```
+
+在这个例子中，`modifyObject` 函数接收到的是 `$myObject` 的引用，所以对 `$obj->property` 的修改会反映在 `$myObject` 上。
+
+![QQ截图20241201171039.png](https://www.helloimg.com/i/2024/12/01/674c27597ef66.png)
+
+### 5.php的常量
+
+在 PHP 中，常量（constants）用于定义在程序运行期间不会改变的值。与变量不同，常量一旦被定义就不能再被修改或重新定义。PHP 提供了多种方式来定义和使用常量，它们在命名、作用域和定义方法上有一些特定的规则。
+
+(2)使用 `define()` 函数
+`define()` 是最常用的定义常量的方式。它接受两个参数：常量名称和常量值。可选地，还可以提供第三个参数来指定常量是否区分大小写（默认是区分大小写的）。
+
+```php
+define("GREETING", "Hello, World!");
+echo GREETING; // 输出: Hello, World!
+```
+
+(3)使用 `const` 关键字
+从 PHP 5.3.0 开始，可以在类外部使用 `const` 关键字来定义常量。这种方式定义的常量必须在全局作用域中定义，并且不能使用表达式作为常量值（只能使用静态值）。
+
+```php
+const PI = 3.14159;
+echo PI; // 输出: 3.14159
+```
+
+(4)命名规则
+
+常量名通常使用大写字母，并且可以包含下划线 `_` 来提高可读性。
+
+常量是全局的，可以在定义后从任何地方访问，包括函数内部。这意味着你不需要像变量那样使用 `global` 关键字来访问常量。
+
+一旦定义了常量，就不能再修改或重新定义它的值。
+
+默认情况下，常量是区分大小写的。但是，你可以通过 `define()` 的第三个参数设置为不区分大小写。
+
+示例：
+
+```php
+define("SITE_NAME", "My Website", true); // 不区分大小写
+echo SITE_NAME; // 输出: My Website
+echo site_name; // 输出: My Website
+```
+
+(5)类中的常量
+
+在类中，可以使用 `const` 关键字来定义类常量。类常量是静态的，属于类本身而不是类的实例。因此，类常量可以通过类名直接访问，而不需要创建类的实例。
+
+```php
+class MyClass {
+    const VERSION = '1.0.0';
+
+    public function getVersion() {
+        return self::VERSION; // 或者 MyClass::VERSION
+    }
+}
+
+echo MyClass::VERSION; // 输出: 1.0.0
+$object = new MyClass();
+echo $object->getVersion(); // 输出: 1.0.0
+```
+
+(6)魔术常量
+
+PHP 还提供了一些预定义的魔术常量，这些常量在不同的上下文中具有特殊的意义，会随环境变化而变化，但用户无法主动修改它。例如：
+
+- `__LINE__`：当前行号。
+- `__FILE__`：当前文件的完整路径和文件名。
+- `__DIR__`：当前文件所在的目录。
+- `__FUNCTION__`：当前函数名。
+- `__CLASS__`：当前类名。
+- `__TRAIT__`：当前 Trait 名。
+- `__METHOD__`：当前方法名。
+- `__NAMESPACE__`：当前命名空间名。
+
+示例：
+
+```php
+echo __FILE__; // 输出当前文件的路径
+echo __LINE__; // 输出当前行号
+```
+(7)检查常量是否存在
+
+可以使用 `defined()` 函数来检查某个常量是否已经定义。
+
+```php
+if (defined("GREETING")) {
+    echo GREETING;
+} else {
+    echo "Constant not defined.";
+}
+```
+
+(8)系统常量
+
+PHP 中的系统常量（system constants）是由 PHP 内核或扩展库预先定义的常量，它们提供了关于 PHP 环境、版本信息、配置设置等方面的数据。这些常量在不同的上下文中具有特定的意义，并且可以帮助开发者更好地理解和调试他们的应用程序。以下是 PHP 中一些常用的系统常量及其说明：
+
+---
+
+PHP 版本和信息
+
+1. `PHP_VERSION`：
+   - 当前 PHP 解释器的版本号。
+   ```php
+   echo PHP_VERSION; // 例如: 8.1.12
+   ```
+
+2. `PHP_MAJOR_VERSION`：
+   - PHP 版本的主要部分（如 8）。
+   ```php
+   echo PHP_MAJOR_VERSION; // 例如: 8
+   ```
+
+3. `PHP_MINOR_VERSION`：
+   - PHP 版本的次要部分（如 1）。
+   ```php
+   echo PHP_MINOR_VERSION; // 例如: 1
+   ```
+
+4. `PHP_RELEASE_VERSION`：
+   - PHP 版本的修订部分（如 12）。
+   ```php
+   echo PHP_RELEASE_VERSION; // 例如: 12
+   ```
+
+5. `PHP_OS`：
+   - 当前操作系统的信息（如 `Linux` 或 `WINNT`）。
+   ```php
+   echo PHP_OS; // 例如: Linux
+   ```
+
+6. `PHP_SAPI`：
+   - 当前 PHP 的服务器 API（Server API），如 `cli`（命令行接口）、`apache2handler`（Apache 模块）等。
+   ```php
+   echo PHP_SAPI; // 例如: cli
+   ```
+
+7. `PHP_INT_MAX`：
+   - PHP 中整数的最大值。
+   ```php
+   echo PHP_INT_MAX; // 例如: 9223372036854775807 (64位系统)
+   ```
+
+8. `PHP_INT_SIZE`：
+   - PHP 中整数的字节大小（通常是 4 或 8）。
+   ```php
+   echo PHP_INT_SIZE; // 例如: 8 (64位系统)
+   ```
+
+9. `PHP_FLOAT_DIG`：
+   - 可以安全地存储在浮点数中的最大有效数字位数。
+   ```php
+   echo PHP_FLOAT_DIG; // 例如: 15
+   ```
+---
+路径和文件相关
+
+1. `__FILE__`：
+   - 当前文件的完整路径和文件名。
+   ```php
+   echo __FILE__; // 输出当前文件的完整路径和文件名
+   ```
+
+2. `__DIR__`：
+   - 当前文件所在的目录。
+   ```php
+   echo __DIR__; // 输出当前文件所在的目录路径
+   ```
+
+3. `DIRECTORY_SEPARATOR`：
+   - 目录分隔符（Windows 上是 `\`，Unix/Linux 上是 `/`）。
+   ```php
+   echo DIRECTORY_SEPARATOR; // 例如: /
+   ```
+
+4. `PATH_SEPARATOR`：
+   - 操作系统路径分隔符（Windows 上是 `;`，Unix/Linux 上是 `:`）。
+   ```php
+   echo PATH_SEPARATOR; // 例如: :
+   ```
+---
+
+其他系统常量
+
+1. `PHP_EOL`：
+   - 当前操作系统的换行符（Windows 上是 `\r\n`，Unix/Linux 上是 `\n`）。
+   ```php
+   echo "Hello" . PHP_EOL . "World"; // 输出: Hello\nWorld (在 Unix/Linux 上)
+   ```
+
+2. `PHP_BINARY`：
+   - PHP 可执行文件的路径（仅在 CLI 模式下可用）。
+   ```php
+   echo PHP_BINARY; // 例如: /usr/bin/php
+   ```
+
+3. `PHP_EXTENSION_DIR`：
+   - PHP 扩展模块的默认路径。
+   ```php
+   echo PHP_EXTENSION_DIR; // 例如: /usr/lib/php/20210902
+   ```
+
+4. `DEFAULT_INCLUDE_PATH`：
+   - 默认的包含路径（用于 `include` 和 `require`）。
+   ```php
+   echo DEFAULT_INCLUDE_PATH; // 例如: .:/usr/share/php
+   ```
+
+5. `PHP_CONFIG_FILE_PATH`：
+   - PHP 配置文件（`php.ini`）的路径。
+   ```php
+   echo PHP_CONFIG_FILE_PATH; // 例如: /etc/php/8.1/cli
+   ```
+
+6. `PHP_SHLIB_SUFFIX`：
+   - 共享库文件的后缀（如 `so` 或 `dll`）。
+   ```php
+   echo PHP_SHLIB_SUFFIX; // 例如: so
+   ```
+
+7. `PHP_ZTS`：
+   - 如果 PHP 编译为线程安全（ZTS, Zend Thread Safety）模式，则该常量存在并等于 1；否则不存在。
+   ```php
+   if (defined('PHP_ZTS')) {
+       echo "Thread Safe";
+   } else {
+       echo "Not Thread Safe";
+   }
+   ```
+
+8. `PHP_DEBUG`：
+   - 如果 PHP 编译为调试模式，则该常量存在并等于 1；否则不存在。
+   ```php
+   if (defined('PHP_DEBUG')) {
+       echo "Debug Mode";
+   } else {
+       echo "Release Mode";
+   }
+   ```
+
+(8)删除常量
+
+PHP 中的常量一旦定义就不能被删除。如果你需要一个可以在运行时修改的值，应该使用变量而不是常量。
+
+### 6.php的数据类型
+
+PHP 是一种动态类型的语言，这意味着变量不需要在声明时指定类型，它们的类型会根据赋值自动确定。PHP 支持多种数据类型，分为标量类型、复合类型和特殊类型。以下是 PHP 中常见的数据类型及其详细说明：
+
+---
+(1)标量类型（Scalar Types）
+
+标量类型是最基本的数据类型，表示单一的值。
+
+1. 布尔型 (`boolean`)：
+   - 表示真或假的逻辑值。
+   ```php
+   $isTrue = true;
+   $isFalse = false;
+   ```
+
+2. 整型 (`integer`)：
+   - 用于表示整数。可以是正数、负数或零。
+   ```php
+   $number = 42;
+   $negativeNumber = -10;
+   ```
+
+3. 浮点型 (`float` 或 `double`)：
+   - 用于表示带有小数点的数字。`float` 和 `double` 在 PHP 中是同义词。
+   ```php
+   $pi = 3.14159;
+   $e = 2.71828;
+   ```
+
+4. 字符串 (`string`)：
+   - 用于表示文本。字符串可以用单引号或双引号来定义。双引号中的变量和某些转义字符会被解析。
+   ```php
+   $name = 'John';
+   $greeting = "Hello, $name"; // 输出: Hello, John
+   ```
+
+---
+(2)复合类型（Compound Types）
+
+复合类型可以包含多个值或对象。
+
+1. 数组 (`array`)：
+   - 用于存储一组有序的值。数组可以是索引数组（使用整数键）或关联数组（使用字符串键）。
+   ```php
+   $fruits = ['apple', 'banana', 'orange']; // 索引数组
+   $person = [
+       'name' => 'John',
+       'age' => 30,
+       'city' => 'New York'
+   ]; // 关联数组
+   ```
+
+2. 对象 (`object`)：
+   - 用于表示类的实例。对象可以包含属性（成员变量）和方法（成员函数）。
+   ```php
+   class Person {
+       public $name;
+       public $age;
+
+       public function __construct($name, $age) {
+           $this->name = $name;
+           $this->age = $age;
+       }
+
+       public function greet() {
+           return "Hello, my name is " . $this->name;
+       }
+   }
+
+   $person = new Person('John', 30);
+   echo $person->greet(); // 输出: Hello, my name is John
+   ```
+
+---
+(3)特殊类型（Special Types）
+
+特殊类型用于表示一些特殊的值或状态。
+
+1. `null`：
+   - 表示没有值或空值。这是唯一可能的 `null` 值。
+   ```php
+   $value = null;
+   ```
+
+2. 资源 (`resource`)：
+   - 表示对外部资源的引用，如数据库连接、文件句柄等。资源通常由特定的函数返回，并且需要手动释放。
+   ```php
+   $file = fopen("example.txt", "r");
+   // 使用 $file 进行操作
+   fclose($file); // 释放资源
+   ```
+
+3. `callable`：
+   - 表示可以调用的值，如函数名、匿名函数或对象的方法。
+   ```php
+   function add($a, $b) {
+       return $a + $b;
+   }
+
+   $callable = 'add';
+   echo $callable(2, 3); // 输出: 5
+
+   $anonymousFunction = function($a, $b) {
+       return $a * $b;
+   };
+   echo $anonymousFunction(2, 3); // 输出: 6
+
+   $object = new stdClass();
+   $object->method = function() {
+       return "Hello from method!";
+   };
+   call_user_func($object->method); // 输出: Hello from method!
+   ```
+
+---
+(4)类型转换
+
+PHP 提供了多种方式来进行类型转换，包括隐式转换和显式转换。
+
+1.隐式转换
+
+PHP 会在必要时自动进行类型转换。例如：
+
+```php
+$number = 42;
+$string = "The number is " . $number; // $number 被隐式转换为字符串
+echo $string; // 输出: The number is 42
+```
+
+2.显式转换
+
+你也可以使用类型强制转换来明确地将一个值转换为另一种类型。
+
+- `(int)` 或 `(integer)`：转换为整型。
+- `(float)` 或 `(double)` 或 `(real)`：转换为浮点型。
+- `(string)`：转换为字符串。
+- `(bool)` 或 `(boolean)`：转换为布尔型。
+- `(array)`：转换为数组。
+- `(object)`：转换为对象。
+- `(unset)`：转换为 `null`。
+
+```php
+$number = "123";
+$integer = (int)$number;
+echo gettype($integer); // 输出: integer
+```
+---
+(7)类型检查
+
+你可以使用以下函数来检查变量的类型：
+
+- `is_int()`：检查是否为整型。
+- `is_float()`：检查是否为浮点型。
+- `is_string()`：检查是否为字符串。
+- `is_bool()`：检查是否为布尔型。
+- `is_array()`：检查是否为数组。
+- `is_object()`：检查是否为对象。
+- `is_null()`：检查是否为 `null`。
+- `is_resource()`：检查是否为资源。
+- `is_callable()`：检查是否为可调用的值。
+
+```php
+$var = 42;
+if (is_int($var)) {
+    echo "The variable is an integer.";
+}
+```
+
+(8)`gettype()`和`settype()`
+
+在PHP中，`gettype()` 和 `settype()` 是用于处理变量类型的内置函数。
+
+---
+gettype()
+
+`gettype()` 函数用于获取一个变量的数据类型。它返回一个字符串，表示给定变量的类型。可能的返回值包括：
+
+- "boolean"：布尔型
+- "integer"：整型
+- "double"：浮点型（PHP 文档中也称其为 "float"）
+- "string"：字符串
+- "array"：数组
+- "object"：对象
+- "resource"：资源
+- "NULL"：空值
+- "unknown type"：未知类型
+语法：
+```php
+string gettype ( mixed $var )
+```
+
+示例：
+```php
+$var = 10;
+echo gettype($var); // 输出: integer
+
+$var = "hello";
+echo gettype($var); // 输出: string
+```
+
+---
+settype()
+
+`settype()` 函数用于将一个变量转换为指定的类型。如果转换成功，该函数返回 `TRUE`；如果失败，则返回 `FALSE`。需要注意的是，`settype()` 实际上会改变传入的变量的值。
+
+语法：
+```php
+bool settype ( mixed &$var , string $type )
+```
+
+`$type` 参数可以是以下之一：
+
+- "boolean" 或 "bool"
+- "integer" 或 "int"
+- "float", "double" 或 "real"（三者等价）
+- "string"
+- "array"
+- "object"
+- "null"
+
+示例：
+```php
+$var = "123";
+if (settype($var, "integer")) {
+    echo gettype($var); // 输出: integer
+} else {
+    echo "Type conversion failed.";
+}
+```
+
+在这个例子中，字符串 `"123"` 被成功转换为了整数 `123`，并且 `gettype()` 确认了这个变化。
+
+---
+
+### 7.运算符
+
+1. 算术运算符
+
+用于执行基本的数学运算
+
++：加法
+
+-：减法
+
+*：乘法
+
+/：除法
+
+%：取模（求余数）
+
+**：幂运算（自 PHP 5.6.0 起）
+
+2. 赋值运算符
+
+用于给变量赋值
+
+=：简单赋值
+
++=, -=, *=, /=, %=, **=：复合赋值运算符
+
+3. 比较运算符
+
+用于比较两个值，通常在条件语句中使用
+
+==：等于
+
+===：全等于（类型和值都相等）
+
+!=：不等于
+
+<>：不等于（与 != 相同）
+
+!==：不全等于（类型或值不同）
+
+\<：小于
+
+\>：大于
+
+\<=：小于等于
+
+\>=：大于等于
+
+4. 逻辑运算符
+4. 
+用于组合多个条件表达式
+
+&& 或 and：逻辑与
+
+|| 或 or：逻辑或
+
+!：逻辑非
+
+xor：异或（两者之一为真则为真，但不是两者都为真）
+
+5. 增量和减量运算符
+用于增加或减少变量的值。
+
+++$var：先增后取值（前置递增）
+
+$var++：先取值后增（后置递增）
+
+--$var：先减后取值（前置递减）
+
+$var--：先取值后减（后置递减）
+
+示例：
+
+```Php
+$x = 5;
+echo ++$x; // 输出 6，然后 $x = 6
+echo $x--; // 输出 6，然后 $x = 5
+```
+
+6. 字符串运算符
+
+用于字符串连接
+
+.：连接两个字符串
+
+.=：连接并赋值
+
+```php
+$text1 = "Hello";
+$text2 = "World";
+echo $text1 . " " . $text2; // 输出: Hello World
+
+$text1 .= " and " . $text2;
+echo $text1; // 输出: Hello and World
+```
+
+7. 数组运算符
+
+用于数组的操作
+
++：合并两个数组（不会覆盖已存在的键名，会保留左边数组的值）
+
+==：如果两个数组有相同的键/值对，则返回 true
+
+===：如果两个数组有相同的键/值对且顺序相同，则返回 true
+
+8. 位运算符
+
+用于对二进制数进行位级操作
+
+&：按位与
+
+|：按位或
+
+^：按位异或
+
+~：按位非
+
+<<：左移
+
+\>>：右移
+
+```php
+$a = 5; // 二进制: 0101
+$b = 3; // 二进制: 0011
+
+echo $a & $b; // 输出: 1 (0101 & 0011 = 0001)
+echo $a | $b; // 输出: 7 (0101 | 0011 = 0111)
+echo $a ^ $b; // 输出: 6 (0101 ^ 0011 = 0110)
+echo ~$a;     // 输出: -6 (按位非操作的结果取决于系统使用的补码表示)
+echo $a << 1; // 输出: 10 (0101 << 1 = 1010)
+echo $a >> 1; // 输出: 2 (0101 >> 1 = 0010)
+```
+
+9. 其他运算符
+
+? :：三元运算符，提供了一种简化的 if-else 语法
+
+??：空合并运算符（自 PHP 7.0.0 起），用于指定默认值
+
+```php
+$age = 20;
+echo ($age >= 18) ? "Adult" : "Minor"; // 输出: Adult
+
+$username = null;
+echo $username ?? "Guest"; // 输出: Guest
+```
+
+### 面向对象
+
+在这里引用一下[菜鸟教程](https://www.runoob.com/php/php-oop.html)的介绍
+
+面向对象（Object-Oriented，简称 OO）是一种编程思想和方法，它将程序中的数据和操作数据的方法封装在一起，形成"对象"，并通过对象之间的交互和消息传递来完成程序的功能。面向对象编程强调数据的封装、继承、多态和动态绑定等特性，使得程序具有更好的可扩展性、可维护性和可重用性。
+
+在面向对象的程序设计（英语：Object-oriented programming，缩写：OOP）中，对象是一个由信息及对信息进行处理的描述所组成的整体，是对现实世界的抽象。
+
+在现实世界里我们所面对的事情都是对象，如计算机、电视机、自行车等。
+
+对象的主要三个特性：
+
+对象的行为：对象可以执行的操作，比如：开灯，关灯就是行为。
+
+对象的形态：对对象不同的行为是如何响应的，比如：颜色，尺寸，外型。
+
+对象的表示：对象的表示就相当于身份证，具体区分在相同的行为与状态下有什么不同。
+
+比如 Animal(动物) 是一个抽象类，我们可以具体到一只狗跟一只羊，而狗跟羊就是具体的对象，他们有颜色属性，可以写，可以跑等行为状态。
+
+![](https://www.runoob.com/wp-content/uploads/2016/05/animals.png)
+
+面向对象编程的三个主要特性：
+
+封装（Encapsulation）：指将对象的属性和方法封装在一起，使得外部无法直接访问和修改对象的内部状态。通过使用访问控制修饰符（public、private、protected）来限制属性和方法的访问权限，从而实现封装。
+
+继承（Inheritance）：指可以创建一个新的类，该类继承了父类的属性和方法，并且可以添加自己的属性和方法。通过继承，可以避免重复编写相似的代码，并且可以实现代码的重用。
+
+多态（Polymorphism）：指可以使用一个父类类型的变量来引用不同子类类型的对象，从而实现对不同对象的统一操作。多态可以使得代码更加灵活，具有更好的可扩展性和可维护性。在 PHP 中，多态可以通过实现接口（interface）和使用抽象类（abstract class）来实现。
+
+面向对象内容
+类 − 定义了一件事物的抽象特点。类的定义包含了数据的形式以及对数据的操作。
+
+对象 − 是类的实例。
+
+成员变量 − 定义在类内部的变量。该变量的值对外是不可见的，但是可以通过成员函数访问，在类被实例化为对象后，该变量即可成为对象的属性。
+
+成员函数 − 定义在类的内部，可用于访问对象的数据。
+
+继承 − 继承性是子类自动共享父类数据结构和方法的机制，这是类之间的一种关系。在定义和实现一个类的时候，可以在一个已经存在的类的基础之上来进行，把这个已经存在的类所定义的内容作为自己的内容，并加入若干新的内容。
+
+父类 − 一个类被其他类继承，可将该类称为父类，或基类，或超类。
+
+子类 − 一个类继承其他类称为子类，也可称为派生类。
+
+多态 − 多态性是指相同的函数或方法可作用于多种类型的对象上并获得不同的结果。不同的对象，收到同一消息可以产生不同的结果，这种现象称为多态性。
+
+重载 − 简单说，就是函数或者方法有同样的名称，但是参数列表不相同的情形，这样的同名不同参数的函数或者方法之间，互相称之为重载函数或者方法。
+
+抽象性 − 抽象性是指将具有一致的数据结构（属性）和行为（操作）的对象抽象成类。一个类就是这样一种抽象，它反映了与应用有关的重要性质，而忽略其他一些无关内容。任何类的划分都是主观的，但必须与具体的应用有关。
+
+封装 − 封装是指将现实世界中存在的某个客体的属性与行为绑定在一起，并放置在一个逻辑单元内。
+
+构造函数 − 主要用来在创建对象时初始化对象， 即为对象成员变量赋初始值，总与new运算符一起使用在创建对象的语句中。
+
+析构函数 − 析构函数(destructor) 与构造函数相反，当对象结束其生命周期时（例如对象所在的函数已调用完毕），系统自动执行析构函数。析构函数往往用来做"清理善后" 的工作（例如在建立对象时用new开辟了一片内存空间，应在退出前在析构函数中用delete释放）。
+
+1.类定义
+
+```php
+<?php
+class phpClass {
+  var $var1;
+  var $var2 = "constant string";
+  
+  function myfunc ($arg1, $arg2) {
+     [..]
+  }
+  [..]
+}
+?>
+```
+
+类使用 class 关键字后加上类名定义
+
+类名后的一对大括号({})内可以定义变量和方法
+
+类的变量使用 var 来声明, 变量也可以初始化值
+
+函数定义类似 PHP 函数的定义，但函数只能通过该类及其实例化的对象访问
+
+实例化
+
+```php
+<?php
+class Site {
+    // 使用 public, private 或 protected 声明属性
+    private $url;
+    private $title;
+
+    // 构造函数可以用于初始化对象的属性
+    public function __construct($url = null, $title = null) {
+        if ($url !== null) {
+            $this->setUrl($url);
+        }
+        if ($title !== null) {
+            $this->setTitle($title);
+        }
+    }
+
+    // 设置 URL
+    public function setUrl($url) {
+        $this->url = $url;
+    }
+
+    // 获取 URL
+    public function getUrl() {
+        return $this->url; // 返回值而不是直接输出
+    }
+
+    // 设置标题
+    public function setTitle($title) {
+        $this->title = $title;
+    }
+
+    // 获取标题
+    public function getTitle() {
+        return $this->title; // 返回值而不是直接输出
+    }
+
+    // 打印信息的方法
+    public function printInfo() {
+        echo "Website Title: " . $this->getTitle() . PHP_EOL;
+        echo "Website URL: " . $this->getUrl() . PHP_EOL;
+    }
+}
+
+// 创建 Site 类的一个实例并测试其功能
+$site = new Site('https://www.example.com', 'Example Website');
+$site->printInfo();
+
+// 修改属性并再次打印
+$site->setUrl('https://www.newexample.com');
+$site->setTitle('New Example Website');
+$site->printInfo();
+?>
+```
+
+属性声明：private $url 和 private $title 是类的私有属性，这意味着它们只能在类内部访问。使用 private 修饰符可以确保这些属性不会被外部代码直接修改，从而提高了数据的安全性和封装性
+
+构造函数：__construct() 是一个特殊的方法，在创建类的新实例时自动调用。它接受两个可选参数 $url 和 $title，用于初始化对象的属性。如果传递了这些参数，则调用相应的 setter 方法来设置属性的值。如果没有传递参数，属性将保持为 null
+
+setUrl 方法：用于设置 $url 属性的值。通过这个方法，可以在类外部安全地修改 $url 属性，而不需要直接访问私有属性
+
+setTitle 方法：用于设置 $title 属性的值，功能与 setUrl 类似
+
+getUrl 方法：用于获取 $url 属性的值。返回值而不是直接输出，这样可以让调用者决定如何处理返回的数据
+
+getTitle 方法：用于获取 $title 属性的值，功能与 getUrl 类似
+
+printInfo 方法：用于格式化输出网站的标题和 URL。它调用了 getTitle 和 getUrl 方法来获取属性的值，并使用 echo 输出这些信息。PHP_EOL 是一个常量，表示当前平台的换行符，使得输出更加跨平台兼容
+
+$this 只能在类的内部使用：$this 是一个关键字，只能在类的方法中使用。如果你在类外部尝试使用 $this，会导致错误
+
+静态上下文中不可用：在静态方法或静态属性中，不能使用 $this，因为静态成员与具体的对象实例无关。在这种情况下，应该使用 self:: 或 static:: 来引用静态成员
